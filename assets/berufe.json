@@ -1,36 +1,2563 @@
 {
  "meta": {
-  "version": "0-gerüst",
+  "version": "1-it",
   "stand": "2026-11-16",
-  "nomenklatur": "CH-ISCO-19 (Codes noch nicht aus der Quelle übernommen); ISCO-08 vierstellig als Orientierung",
-  "hinweis": "Dies ist ein Gerüst mit einem Beispielfeld (IT & Digital, Status «entwurf»). Alle anderen Felder sind noch leer und werden mit dem Prompt in prompt-berufsliste-RAV.md befüllt.",
-  "quellen": []
+  "nomenklatur": "CH-ISCO-19, Zuweisungsschlüssel V1.2 (Oktober 2022), BFS",
+  "hinweis": "Berufsfeld «IT & Digital» ist befüllt (geprüft gegen BFS-Zuweisungsschlüssel, ESCO und jobs.ch). Alle anderen Felder sind noch leer.",
+  "quellen": [
+   "BFS, Schweizer Berufsnomenklatur CH-ISCO-19, Zuweisungsschlüssel V1.2: https://dam-api.bfs.admin.ch/hub/api/dam/assets/23530845/master (Abruf 2026-11-16)",
+   "ESCO (Europäische Kommission): https://esco.ec.europa.eu, API https://ec.europa.eu/esco/api (Abruf 2026-11-16)",
+   "jobs.ch öffentliche Stellensuche: https://www.jobs.ch (Abruf 2026-11-16, Stichprobe je Suchbegriff)"
+  ]
  },
  "cluster": [
-  {"id":"it","de":"IT & Digital","en":"IT & Digital","beschreibung":"Entwicklung, Betrieb, Support, Daten und Sicherheit.","unterfelder":["Entwicklung","Betrieb & Infrastruktur","Support","Daten","Leitung"],"verwandt":[{"id":"technik","grund":"gemeinsame technische Grundlagen, Embedded, Automation"},{"id":"buero","grund":"Anwendersupport, Business-Analyse, Prozessarbeit"},{"id":"medien","grund":"Web, UX, digitale Medien"},{"id":"finanzen","grund":"Banken- und Versicherungs-IT"}]},
-  {"id":"technik","de":"Technik & Ingenieurwesen","en":"Engineering & Technology","beschreibung":"","unterfelder":[],"verwandt":[{"id":"it","grund":"Automation, Embedded, Datenanalyse"},{"id":"industrie","grund":"Konstruktion und Produktion"},{"id":"bau","grund":"Bauingenieurwesen, Gebäudetechnik"}]},
-  {"id":"industrie","de":"Industrie & Produktion","en":"Industry & Manufacturing","beschreibung":"","unterfelder":[],"verwandt":[{"id":"technik","grund":"Maschinen und Anlagen"},{"id":"logistik","grund":"Lager, Versand, Materialfluss"},{"id":"bau","grund":"Metall, Holz, Werkstoffe"}]},
-  {"id":"bau","de":"Bau & Handwerk","en":"Construction & Trades","beschreibung":"","unterfelder":[],"verwandt":[{"id":"technik","grund":"Planung, Gebäudetechnik"},{"id":"industrie","grund":"Werkstoffe, Fertigung"}]},
-  {"id":"gesundheit","de":"Gesundheit & Pflege","en":"Health & Care","beschreibung":"","unterfelder":[],"verwandt":[{"id":"soziales","grund":"Betreuung, Beratung"},{"id":"wissenschaft","grund":"Labor, Forschung"}]},
-  {"id":"soziales","de":"Soziales & Bildung","en":"Social Work & Education","beschreibung":"","unterfelder":[],"verwandt":[{"id":"gesundheit","grund":"Betreuung, Pflege"},{"id":"recht","grund":"Beratung, Begleitung"}]},
-  {"id":"buero","de":"Büro & Administration","en":"Office & Administration","beschreibung":"","unterfelder":[],"verwandt":[{"id":"finanzen","grund":"Buchhaltung, Sachbearbeitung"},{"id":"it","grund":"Anwendersupport, Business-Analyse"},{"id":"recht","grund":"Sekretariat, Sachbearbeitung"}]},
-  {"id":"finanzen","de":"Finanzen & Versicherung","en":"Finance & Insurance","beschreibung":"","unterfelder":[],"verwandt":[{"id":"buero","grund":"Sachbearbeitung, Treuhand"},{"id":"recht","grund":"Compliance, Beratung"},{"id":"it","grund":"Banken- und Versicherungs-IT"}]},
-  {"id":"handel","de":"Handel & Verkauf","en":"Retail & Sales","beschreibung":"","unterfelder":[],"verwandt":[{"id":"logistik","grund":"Warenfluss, Lager"},{"id":"gastro","grund":"Kundenkontakt, Service"},{"id":"medien","grund":"Marketing, Kommunikation"}]},
-  {"id":"gastro","de":"Gastgewerbe & Tourismus","en":"Hospitality & Tourism","beschreibung":"","unterfelder":[],"verwandt":[{"id":"handel","grund":"Kundenkontakt"},{"id":"reinigung","grund":"Hotellerie, Hauswirtschaft"}]},
-  {"id":"logistik","de":"Logistik & Verkehr","en":"Logistics & Transport","beschreibung":"","unterfelder":[],"verwandt":[{"id":"handel","grund":"Warenfluss"},{"id":"industrie","grund":"Materialfluss"}]},
-  {"id":"sicherheit","de":"Sicherheit & Öffentliche Dienste","en":"Security & Public Services","beschreibung":"","unterfelder":[],"verwandt":[{"id":"recht","grund":"Verwaltung, Vollzug"},{"id":"gesundheit","grund":"Rettung, Notfall"}]},
-  {"id":"landwirtschaft","de":"Land- & Forstwirtschaft","en":"Agriculture & Forestry","beschreibung":"","unterfelder":[],"verwandt":[{"id":"bau","grund":"Garten- und Landschaftsbau"},{"id":"wissenschaft","grund":"Umwelt, Agrarwissenschaft"}]},
-  {"id":"medien","de":"Medien, Kreation & Kommunikation","en":"Media, Creative & Communication","beschreibung":"","unterfelder":[],"verwandt":[{"id":"it","grund":"Web, UX"},{"id":"handel","grund":"Marketing"}]},
-  {"id":"recht","de":"Recht, Beratung & Management","en":"Law, Consulting & Management","beschreibung":"","unterfelder":[],"verwandt":[{"id":"finanzen","grund":"Compliance, Beratung"},{"id":"buero","grund":"Verwaltung"},{"id":"soziales","grund":"Beratung"}]},
-  {"id":"reinigung","de":"Reinigung & Hauswirtschaft","en":"Cleaning & Housekeeping","beschreibung":"","unterfelder":[],"verwandt":[{"id":"gastro","grund":"Hotellerie"},{"id":"gesundheit","grund":"Spital- und Heimhauswirtschaft"}]},
-  {"id":"wissenschaft","de":"Wissenschaft & Forschung","en":"Science & Research","beschreibung":"","unterfelder":[],"verwandt":[{"id":"gesundheit","grund":"Labor"},{"id":"technik","grund":"Forschung und Entwicklung"},{"id":"landwirtschaft","grund":"Umwelt"}]}
+  {
+   "id": "it",
+   "de": "IT & Digital",
+   "en": "IT & Digital",
+   "beschreibung": "Entwicklung, Betrieb, Support, Daten, Sicherheit und Telekommunikation. Basis: alle ICT-Gruppen der CH-ISCO-19 (133, 2434, 251, 252, 351, 3522, 7422).",
+   "unterfelder": [
+    "Leitung & Vertrieb",
+    "Analyse & Beratung",
+    "Entwicklung & Architektur",
+    "Projekt & Test",
+    "Daten",
+    "Betrieb & Infrastruktur",
+    "Sicherheit",
+    "Support",
+    "Web",
+    "Telekommunikation"
+   ],
+   "verwandt": [
+    {
+     "id": "technik",
+     "grund": "gemeinsame technische Grundlagen, Embedded, Automation"
+    },
+    {
+     "id": "buero",
+     "grund": "Anwendersupport, Business-Analyse, Prozessarbeit"
+    },
+    {
+     "id": "medien",
+     "grund": "Web, UX, digitale Medien"
+    },
+    {
+     "id": "finanzen",
+     "grund": "Banken- und Versicherungs-IT"
+    }
+   ]
+  },
+  {
+   "id": "technik",
+   "de": "Technik & Ingenieurwesen",
+   "en": "Engineering & Technology",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "it",
+     "grund": "Automation, Embedded, Datenanalyse"
+    },
+    {
+     "id": "industrie",
+     "grund": "Konstruktion und Produktion"
+    },
+    {
+     "id": "bau",
+     "grund": "Bauingenieurwesen, Gebäudetechnik"
+    }
+   ]
+  },
+  {
+   "id": "industrie",
+   "de": "Industrie & Produktion",
+   "en": "Industry & Manufacturing",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "technik",
+     "grund": "Maschinen und Anlagen"
+    },
+    {
+     "id": "logistik",
+     "grund": "Lager, Versand, Materialfluss"
+    },
+    {
+     "id": "bau",
+     "grund": "Metall, Holz, Werkstoffe"
+    }
+   ]
+  },
+  {
+   "id": "bau",
+   "de": "Bau & Handwerk",
+   "en": "Construction & Trades",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "technik",
+     "grund": "Planung, Gebäudetechnik"
+    },
+    {
+     "id": "industrie",
+     "grund": "Werkstoffe, Fertigung"
+    }
+   ]
+  },
+  {
+   "id": "gesundheit",
+   "de": "Gesundheit & Pflege",
+   "en": "Health & Care",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "soziales",
+     "grund": "Betreuung, Beratung"
+    },
+    {
+     "id": "wissenschaft",
+     "grund": "Labor, Forschung"
+    }
+   ]
+  },
+  {
+   "id": "soziales",
+   "de": "Soziales & Bildung",
+   "en": "Social Work & Education",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "gesundheit",
+     "grund": "Betreuung, Pflege"
+    },
+    {
+     "id": "recht",
+     "grund": "Beratung, Begleitung"
+    }
+   ]
+  },
+  {
+   "id": "buero",
+   "de": "Büro & Administration",
+   "en": "Office & Administration",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "finanzen",
+     "grund": "Buchhaltung, Sachbearbeitung"
+    },
+    {
+     "id": "it",
+     "grund": "Anwendersupport, Business-Analyse"
+    },
+    {
+     "id": "recht",
+     "grund": "Sekretariat, Sachbearbeitung"
+    }
+   ]
+  },
+  {
+   "id": "finanzen",
+   "de": "Finanzen & Versicherung",
+   "en": "Finance & Insurance",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "buero",
+     "grund": "Sachbearbeitung, Treuhand"
+    },
+    {
+     "id": "recht",
+     "grund": "Compliance, Beratung"
+    },
+    {
+     "id": "it",
+     "grund": "Banken- und Versicherungs-IT"
+    }
+   ]
+  },
+  {
+   "id": "handel",
+   "de": "Handel & Verkauf",
+   "en": "Retail & Sales",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "logistik",
+     "grund": "Warenfluss, Lager"
+    },
+    {
+     "id": "gastro",
+     "grund": "Kundenkontakt, Service"
+    },
+    {
+     "id": "medien",
+     "grund": "Marketing, Kommunikation"
+    }
+   ]
+  },
+  {
+   "id": "gastro",
+   "de": "Gastgewerbe & Tourismus",
+   "en": "Hospitality & Tourism",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "handel",
+     "grund": "Kundenkontakt"
+    },
+    {
+     "id": "reinigung",
+     "grund": "Hotellerie, Hauswirtschaft"
+    }
+   ]
+  },
+  {
+   "id": "logistik",
+   "de": "Logistik & Verkehr",
+   "en": "Logistics & Transport",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "handel",
+     "grund": "Warenfluss"
+    },
+    {
+     "id": "industrie",
+     "grund": "Materialfluss"
+    }
+   ]
+  },
+  {
+   "id": "sicherheit",
+   "de": "Sicherheit & Öffentliche Dienste",
+   "en": "Security & Public Services",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "recht",
+     "grund": "Verwaltung, Vollzug"
+    },
+    {
+     "id": "gesundheit",
+     "grund": "Rettung, Notfall"
+    }
+   ]
+  },
+  {
+   "id": "landwirtschaft",
+   "de": "Land- & Forstwirtschaft",
+   "en": "Agriculture & Forestry",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "bau",
+     "grund": "Garten- und Landschaftsbau"
+    },
+    {
+     "id": "wissenschaft",
+     "grund": "Umwelt, Agrarwissenschaft"
+    }
+   ]
+  },
+  {
+   "id": "medien",
+   "de": "Medien, Kreation & Kommunikation",
+   "en": "Media, Creative & Communication",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "it",
+     "grund": "Web, UX"
+    },
+    {
+     "id": "handel",
+     "grund": "Marketing"
+    }
+   ]
+  },
+  {
+   "id": "recht",
+   "de": "Recht, Beratung & Management",
+   "en": "Law, Consulting & Management",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "finanzen",
+     "grund": "Compliance, Beratung"
+    },
+    {
+     "id": "buero",
+     "grund": "Verwaltung"
+    },
+    {
+     "id": "soziales",
+     "grund": "Beratung"
+    }
+   ]
+  },
+  {
+   "id": "reinigung",
+   "de": "Reinigung & Hauswirtschaft",
+   "en": "Cleaning & Housekeeping",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "gastro",
+     "grund": "Hotellerie"
+    },
+    {
+     "id": "gesundheit",
+     "grund": "Spital- und Heimhauswirtschaft"
+    }
+   ]
+  },
+  {
+   "id": "wissenschaft",
+   "de": "Wissenschaft & Forschung",
+   "en": "Science & Research",
+   "beschreibung": "",
+   "unterfelder": [],
+   "verwandt": [
+    {
+     "id": "gesundheit",
+     "grund": "Labor"
+    },
+    {
+     "id": "technik",
+     "grund": "Forschung und Entwicklung"
+    },
+    {
+     "id": "landwirtschaft",
+     "grund": "Umwelt"
+    }
+   ]
+  }
  ],
  "berufe": [
-  {"id":"it-2511-systemanalytiker","cluster":"it","unterfeld":"Entwicklung","isco08":"2511","ch_isco19":null,"de":["Systemanalytiker/in","Business-Analyst/in IT"],"fr":[],"it":[],"en":["Systems analyst","Business analyst (IT)"],"web":[{"titel":"Business Analyst","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"","nachbarn":[{"id":"it-2512-softwareentwickler","grund":"Anforderungen und Umsetzung"}],"quereinstieg":"","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"},
-  {"id":"it-2512-softwareentwickler","cluster":"it","unterfeld":"Entwicklung","isco08":"2512","ch_isco19":null,"de":["Softwareentwickler/in","Informatiker/in EFZ Applikationsentwicklung"],"fr":[],"it":[],"en":["Software developer"],"web":[{"titel":"Full-Stack Developer","sprache":"en","quelle":"Beispiel, noch zu prüfen"},{"titel":"Backend Engineer","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"EFZ, HF, FH","nachbarn":[{"id":"it-2513-webentwickler","grund":"gleiche Programmiergrundlagen"},{"id":"it-2522-systemadministrator","grund":"Skripting, Betrieb, DevOps"}],"quereinstieg":"","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"},
-  {"id":"it-2513-webentwickler","cluster":"it","unterfeld":"Entwicklung","isco08":"2513","ch_isco19":null,"de":["Web- und Multimediaentwickler/in","Mediamatiker/in EFZ"],"fr":[],"it":[],"en":["Web developer","Multimedia developer"],"web":[{"titel":"Frontend Developer","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"EFZ, FH","nachbarn":[{"id":"it-2512-softwareentwickler","grund":"Programmieren"}],"quereinstieg":"","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"},
-  {"id":"it-2522-systemadministrator","cluster":"it","unterfeld":"Betrieb & Infrastruktur","isco08":"2522","ch_isco19":null,"de":["Systemadministrator/in","Systemtechniker/in"],"fr":[],"it":[],"en":["Systems administrator"],"web":[{"titel":"DevOps Engineer","sprache":"en","quelle":"Beispiel, noch zu prüfen"},{"titel":"Cloud Engineer","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"EFZ, HF, FH","nachbarn":[{"id":"it-2523-netzwerk","grund":"Infrastruktur"},{"id":"it-3512-support","grund":"Betrieb und Anwenderkontakt"}],"quereinstieg":"","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"},
-  {"id":"it-2523-netzwerk","cluster":"it","unterfeld":"Betrieb & Infrastruktur","isco08":"2523","ch_isco19":null,"de":["Netzwerkspezialist/in"],"fr":[],"it":[],"en":["Computer network professional","Network engineer"],"web":[{"titel":"Network Engineer","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"","nachbarn":[{"id":"it-2522-systemadministrator","grund":"Infrastruktur"}],"quereinstieg":"","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"},
-  {"id":"it-3512-support","cluster":"it","unterfeld":"Support","isco08":"3512","ch_isco19":null,"de":["IT-Supporter/in","ICT-Anwenderbetreuer/in"],"fr":[],"it":[],"en":["ICT user support technician"],"web":[{"titel":"Service Desk Agent","sprache":"en","quelle":"Beispiel, noch zu prüfen"},{"titel":"Support Engineer","sprache":"en","quelle":"Beispiel, noch zu prüfen"}],"niveau":"EFZ","nachbarn":[{"id":"it-2522-systemadministrator","grund":"Aufstieg in den Betrieb"}],"quereinstieg":"Oft aus Büro-/Kundenberufen mit guter IT-Anwenderkenntnis.","quellen":["ISCO-08 (Orientierung)"],"status":"entwurf"}
+  {
+   "id": "it-13300",
+   "cluster": "it",
+   "unterfeld": "Leitung & Vertrieb",
+   "gruppe": "Leitung Informatik / ICT-Dienste",
+   "isco08": "1330",
+   "isco08_en": "ICT service managers",
+   "ch_isco19": "13300",
+   "de": [
+    "EDV-Chef/in",
+    "Head Run",
+    "IC-Leiter/in",
+    "Head Plan",
+    "EDV-Leiter/in",
+    "Leiter EDV / Leiterin EDV",
+    "IT Manager/in",
+    "CAD-Leiter/in",
+    "Head Build",
+    "ICT-Manager/in",
+    "Telefondirektor/in",
+    "Chef Informatik / Chefin Informatik",
+    "EDV-Support-Chef/in",
+    "Informatik-Leiter/in"
+   ],
+   "fr": [
+    "Chef TED / Cheffe TED",
+    "Directeur de l’exploitation informatique / Directrice de l’exploitation informatique",
+    "Gestionnaire IC",
+    "Directeur de la planification informatique / Directrice de la planification informatique"
+   ],
+   "it": [
+    "Capo EED",
+    "Head Run",
+    "Gerente IC",
+    "Head Plan"
+   ],
+   "en": [
+    "Head run",
+    "Head plan",
+    "Data processing manager",
+    "IT manager",
+    "Head build",
+    "ICT manager",
+    "ICT operations manager",
+    "Information technology director",
+    "Systems development manager",
+    "Telecommunications manager"
+   ],
+   "en_esco": [
+    "chief information officer",
+    "CIO",
+    "IT director",
+    "chief information officers",
+    "ICT project manager",
+    "IT projects manager",
+    "IT project manager",
+    "web projects manager",
+    "web project manager",
+    "ICT project managers"
+   ],
+   "web": [
+    {
+     "titel": "Head of IT",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 65 gesichteten Titeln"
+    },
+    {
+     "titel": "Leiter/in IT bzw. Informatik",
+     "sprache": "de/en",
+     "haeufigkeit": 9,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 9 von 65 gesichteten Titeln"
+    },
+    {
+     "titel": "IT-/ICT-Verantwortliche/r",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 65 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: höhere Fachprüfung (HFP)",
+   "anzahl_titel": 44,
+   "nachbarn": [
+    {
+     "id": "it-25124",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: ICT project management; apply conflict management; create project specifications"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: identify legal requirements; systems development life-cycle"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: create project specifications"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 13300: 44 aktive Titel",
+    "ESCO «chief information officer» http://data.europa.eu/esco/occupation/82f90e87-de92-4678-adae-61d3e5f7e1e4 (Abruf 2026-11-16)",
+    "ESCO «ICT project manager» http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-24340",
+   "cluster": "it",
+   "unterfeld": "Leitung & Vertrieb",
+   "gruppe": "Vertrieb von ICT-Produkten und -Dienstleistungen",
+   "isco08": "2434",
+   "isco08_en": "ICT sales professionals",
+   "ch_isco19": "24340",
+   "de": [
+    "Informatikvertreter/in",
+    "Informatik-Kaufmann / Informatik-Kauffrau",
+    "Account manager ICT"
+   ],
+   "fr": [
+    "Représentant en informatique / Représentante en informatique",
+    "Commerçant en informatique / Commerçante en informatique",
+    "Account manager ICT"
+   ],
+   "it": [
+    "Rappresentante d'informatica",
+    "Commerciante in prodotti informatici",
+    "Account manager ICT"
+   ],
+   "en": [
+    "Commercial employee in IT"
+   ],
+   "en_esco": [
+    "ICT account manager",
+    "ICT account managers",
+    "IT account manager",
+    "ICT key account manager",
+    "IT key account manager"
+   ],
+   "web": [
+    {
+     "titel": "Account Manager (ICT)",
+     "sprache": "de/en",
+     "haeufigkeit": 14,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 14 von 58 gesichteten Titeln"
+    },
+    {
+     "titel": "Sales Engineer IT Security",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 58 gesichteten Titeln"
+    },
+    {
+     "titel": "Channel Partner Manager",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 58 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 3,
+   "nachbarn": [
+    {
+     "id": "it-35120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: guarantee customer satisfaction; product comprehension"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "handel",
+     "grund": "Vertriebsfähigkeiten laut ESCO «ICT account manager»: sales strategies, customer relationship management"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 24340: 3 aktive Titel",
+    "ESCO «ICT account manager» http://data.europa.eu/esco/occupation/89b85c45-ddc7-4fe1-be5a-d3db2be11f3b (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25100",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Software-/Applikationsfachleute, allgemein",
+   "isco08": "251",
+   "isco08_en": "Software and applications developers and analysts",
+   "ch_isco19": "25100",
+   "de": [
+    "Projektleiter SIZ / Projektleiterin SIZ",
+    "Master in Business Information System",
+    "Bachelor in Business Information System"
+   ],
+   "fr": [
+    "Chef de projet SIZ / Cheffe de projet SIZ",
+    "Master en Business Information System",
+    "Bachelor en Business Information System"
+   ],
+   "it": [
+    "Capoprogetto SIZ",
+    "Master in Business Information System",
+    "Bachelor in Business Information System"
+   ],
+   "en": [
+    "Master in business information system",
+    "Bachelor in business information system"
+   ],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 3,
+   "nachbarn": [
+    {
+     "id": "it-25101",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25100: 3 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25101",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Informatikingenieur/in (Ingenieur-/Diplomtitel)",
+   "isco08": "251",
+   "isco08_en": "Software and applications developers and analysts",
+   "ch_isco19": "25101",
+   "de": [
+    "EDV-Ingenieur/in",
+    "Computeringenieur/in",
+    "Digital-Ingenieur/in",
+    "Informatikingenieur/in",
+    "Informatik-Ingenieur/in",
+    "Diplom Informatik-Ingenieur/in",
+    "Information technology engineer",
+    "Systemingenieur in Kommunikationstechnik / Systemingenieurin in Kommunikationstechnik",
+    "Informatikingenieur HTL / Informatikingenieurin HTL",
+    "Informatik-Ingenieur, dipl. ETH / Informatik-Ingenieurin, dipl. ETH"
+   ],
+   "fr": [
+    "Ingénieur en informatique / Ingénieure en informatique",
+    "Ingénieur sur computer / Ingénieure sur computer",
+    "Ingénieur digital / Ingénieure digitale",
+    "Ingénieur informaticien / Ingénieure informaticienne"
+   ],
+   "it": [
+    "Ingegnere in informatica",
+    "Ingegnere su computer",
+    "Ingegnere digitale / Ingegnera digitale",
+    "Ingegnere d'informatica"
+   ],
+   "en": [
+    "EDP engineer",
+    "Computer engineer",
+    "Information technology engineer"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Cloud Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 29 gesichteten Titeln"
+    },
+    {
+     "titel": "ICT Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 29 gesichteten Titeln"
+    },
+    {
+     "titel": "AI Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 29 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: FH, HTL, ETH",
+   "anzahl_titel": 24,
+   "nachbarn": [
+    {
+     "id": "it-25111",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25121",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25101: 24 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25111",
+   "cluster": "it",
+   "unterfeld": "Analyse & Beratung",
+   "gruppe": "Systemanalyse und Business-Analyse",
+   "isco08": "2511",
+   "isco08_en": "Systems analysts",
+   "ch_isco19": "25111",
+   "de": [
+    "Revisor EDV / Revisorin EDV",
+    "ICT-Auditor/in",
+    "ICT-Revisor/in",
+    "ICT Auditor",
+    "IT-Architekt/in",
+    "Systemmanager/in",
+    "Systemrevisor/in",
+    "IT-Controller/in",
+    "IT Controller",
+    "ICT Architect",
+    "ICT-Architekt/in",
+    "EDV-Analytiker/in",
+    "ICT Controller",
+    "EDV-Controller"
+   ],
+   "fr": [
+    "Réviseur TED / Réviseuse TED",
+    "Auditeur informatique / Auditrice informatique",
+    "Réviseur ICT / Réviseuse ICT",
+    "ICT Auditor"
+   ],
+   "it": [
+    "Revisore EED / Revisora EED",
+    "Auditor ICT",
+    "Revisore ICT",
+    "ICT Auditor"
+   ],
+   "en": [
+    "ICT auditor",
+    "IT architect",
+    "IT controller",
+    "ICT architect",
+    "ICT controller",
+    "Lead architect",
+    "System architect",
+    "Business analyst",
+    "System analyst",
+    "Business engineer"
+   ],
+   "en_esco": [
+    "ICT business analyst",
+    "ICT business analysts",
+    "business process specialist",
+    "IT business analyst",
+    "ICT system analyst",
+    "IT system analyst",
+    "IT systems analyst",
+    "network analyst",
+    "ICT systems analysts",
+    "ICT system analysts"
+   ],
+   "web": [
+    {
+     "titel": "Business Analyst",
+     "sprache": "de/en",
+     "haeufigkeit": 19,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 19 von 86 gesichteten Titeln"
+    },
+    {
+     "titel": "Systems Analyst",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 86 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: höhere Fachprüfung (HFP), HF/TS",
+   "anzahl_titel": 51,
+   "nachbarn": [
+    {
+     "id": "it-25122",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse business requirements; business process modelling; create data models"
+    },
+    {
+     "id": "it-25121",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse business requirements; define technical requirements; identify customer requirements"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: legal requirements of ICT products; solve ICT system problems"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25111: 51 aktive Titel",
+    "ESCO «ICT business analyst» http://data.europa.eu/esco/occupation/fe0fa514-b48d-4a53-9757-a283c0baacf0 (Abruf 2026-11-16)",
+    "ESCO «ICT system analyst» http://data.europa.eu/esco/occupation/a6a0b60f-08da-4faa-bf54-942987efb471 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25112",
+   "cluster": "it",
+   "unterfeld": "Analyse & Beratung",
+   "gruppe": "IT-Beratung und Applikationsberatung",
+   "isco08": "2511",
+   "isco08_en": "Systems analysts",
+   "ch_isco19": "25112",
+   "de": [
+    "IC-Berater/in",
+    "IT-Berater/in",
+    "EDV-Berater/in",
+    "CAD-Berater/in",
+    "SAP-Berater/in",
+    "ICT Berater/in",
+    "Systemberater/in",
+    "IT Consultant",
+    "EDV-Consultant",
+    "ICT Consultant",
+    "Softwareberater/in",
+    "Informatikberater/in",
+    "System Consultant",
+    "Applikationsberater/in"
+   ],
+   "fr": [
+    "Conseiller IC / Conseillère IC",
+    "Conseiller IT / Conseillère IT",
+    "Conseiller TED / Conseillère TED",
+    "Conseiller CAD / Conseillère CAD"
+   ],
+   "it": [
+    "Consulente IC",
+    "Consulente IT",
+    "Consulente EED",
+    "Consulente CAD"
+   ],
+   "en": [
+    "ICT consultant",
+    "IT consultant",
+    "Software consultant",
+    "System consultant",
+    "ICT sourcing manager",
+    "Technology consultant",
+    "E-business consultant",
+    "Application consultant",
+    "IT strategy consultant",
+    "ICT outsourcing manager"
+   ],
+   "en_esco": [
+    "ICT consultant",
+    "ICT advisor",
+    "IT advisor",
+    "ICT ERP consultant",
+    "IT consultant",
+    "ICT consultants"
+   ],
+   "web": [
+    {
+     "titel": "SAP Consultant",
+     "sprache": "de/en",
+     "haeufigkeit": 12,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 12 von 73 gesichteten Titeln"
+    },
+    {
+     "titel": "IT Consultant",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 73 gesichteten Titeln"
+    },
+    {
+     "titel": "ICT-Berater/-in",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 73 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 26,
+   "nachbarn": [
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: legal requirements of ICT products; solve ICT system problems"
+    },
+    {
+     "id": "it-25124",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: create project specifications"
+    },
+    {
+     "id": "it-13300",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: create project specifications"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25112: 26 aktive Titel",
+    "ESCO «ICT consultant» http://data.europa.eu/esco/occupation/b1c80369-067e-4041-84c8-dbe65640a5d8 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25121",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Software-Entwicklung und -Architektur",
+   "isco08": "2512",
+   "isco08_en": "Software developers",
+   "ch_isco19": "25121",
+   "de": [
+    "Programmierer/in",
+    "EDV-Entwickler/in",
+    "Geoinformatiker/in",
+    "Software Manager/in",
+    "Computerlinguist/in",
+    "Softwareingenieur/in",
+    "Software Engineer",
+    "Chefprogrammierer/in",
+    "EDV-Programmierer/in",
+    "Hilfsprogrammierer/in",
+    "Softwareentwickler/in",
+    "Softwarespezialist/in",
+    "Software-Ingenieur",
+    "Juniorprogrammierer/in"
+   ],
+   "fr": [
+    "Programmeur / Programmeuse",
+    "Développeur TED / Développeuse TED",
+    "Géo-informaticien / Géo-informaticienne",
+    "Software Manager"
+   ],
+   "it": [
+    "Programmatore / Programmatrice",
+    "Sviluppatore di progetti EED / Sviluppatrice di progetti EED",
+    "Geoinformatico / Geoinformatica",
+    "Software Manager"
+   ],
+   "en": [
+    "Programmer",
+    "Specialist in geoinformatics",
+    "Software manager",
+    "Software engineer",
+    "EDP programmer",
+    "Software developer",
+    "Medical informatics engineer",
+    "User experience designer",
+    "User experience engineer",
+    "User experience researcher"
+   ],
+   "en_esco": [
+    "software developer",
+    "application developer",
+    "application programmer",
+    "solutions developer",
+    "programmer",
+    "software specialist",
+    "application software developer",
+    "software developers",
+    "software engineer",
+    "applications engineer"
+   ],
+   "web": [
+    {
+     "titel": "Software Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 27,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 27 von 53 gesichteten Titeln"
+    },
+    {
+     "titel": "Fullstack Software Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 53 gesichteten Titeln"
+    },
+    {
+     "titel": "Embedded Software Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 53 gesichteten Titeln"
+    },
+    {
+     "titel": "Tech Lead",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 53 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), FH",
+   "anzahl_titel": 35,
+   "nachbarn": [
+    {
+     "id": "it-25130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse software specifications; computer programming; create flowchart diagram"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse business requirements; define technical requirements; identify customer requirements"
+    },
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: collect customer feedback on applications; computer programming; provide technical documentation"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25121: 35 aktive Titel",
+    "ESCO «software developer» http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1 (Abruf 2026-11-16)",
+    "ESCO «software architect» http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25122",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Wirtschaftsinformatik und IT-Lösungen",
+   "isco08": "2512",
+   "isco08_en": "Software developers",
+   "ch_isco19": "25122",
+   "de": [
+    "IS Engineer",
+    "BPM Consultant",
+    "Process Consultant",
+    "Funktionsanalytiker/in",
+    "IT Solution Engineer",
+    "ICT-Sourcing-Manager",
+    "IT-Solution-Ingenieur/in",
+    "Wirtschaftsinformatiker/in",
+    "Spezialist Wirtschaftsinformatik / Spezialistin Wirtschaftsinformatik",
+    "Wirtschaftsinformatiker HF / Wirtschaftsinformatikerin HF",
+    "Wirtschaftsinformatiker FH / Wirtschaftsinformatikerin FH",
+    "Wirtschaftsinformatiker BP / Wirtschaftsinformatikerin BP",
+    "Master in Betriebsinformatik",
+    "Bachelor in Betriebsinformatik"
+   ],
+   "fr": [
+    "Informaticien de gestion / Informaticienne de gestion",
+    "Consultant BPM / Consultante BPM",
+    "Consultant de processus / Consultante de processus",
+    "Analyste de fonction"
+   ],
+   "it": [
+    "IS Engineer",
+    "BPM Consultant",
+    "Process Consultant",
+    "Analista funzionale"
+   ],
+   "en": [
+    "Is engineer",
+    "Bpm consultant",
+    "Process consultant",
+    "IT solution engineer",
+    "Business data processing specialist",
+    "Business information specialist",
+    "Master in business informatics",
+    "Bachelor in business information technology",
+    "Master in business information technology"
+   ],
+   "en_esco": [
+    "ICT system architect",
+    "ICT systems architect",
+    "solution architect",
+    "IT systems architect",
+    "IT system architect",
+    "systems architect",
+    "ICT system architects",
+    "ICT systems architects",
+    "information systems architect"
+   ],
+   "web": [
+    {
+     "titel": "Wirtschaftsinformatiker/in",
+     "sprache": "de/en",
+     "haeufigkeit": 7,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 7 von 57 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP), HF/TS, FH, HTL",
+   "anzahl_titel": 25,
+   "nachbarn": [
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse business requirements; business process modelling; create data models"
+    },
+    {
+     "id": "it-25121",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse business requirements; define technical requirements"
+    },
+    {
+     "id": "it-35140",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: use markup languages; web programming"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25122: 25 aktive Titel",
+    "ESCO «ICT system architect» http://data.europa.eu/esco/occupation/e1c72b5f-4c5c-487c-a6df-e84b64a51dae (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25123",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Systementwicklung / System Engineering",
+   "isco08": "2512",
+   "isco08_en": "Software developers",
+   "ch_isco19": "25123",
+   "de": [
+    "Systemingenieur/in",
+    "System Engineer",
+    "System Designer/in",
+    "Systemspezialist/in",
+    "ICT System Engineer",
+    "Systementwickler CIM / Systementwicklerin CIM",
+    "ICT-System-Ingenieur",
+    "ICT-Plattform-Ingenieur/in",
+    "Systementwicklungs-Ingenieur/in"
+   ],
+   "fr": [
+    "Ingénieur en systèmes informatiques / Ingénieure en systèmes informatiques",
+    "System Engineer",
+    "System Designer",
+    "Spécialiste de système"
+   ],
+   "it": [
+    "Ingegnere in sistemi informatici",
+    "System Engineer",
+    "System Designer",
+    "Specialista in sistemi informatici"
+   ],
+   "en": [
+    "Systems engineer",
+    "System engineer",
+    "System designer",
+    "ICT system engineer",
+    "ICT platform engineer"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "System Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 29,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 29 von 53 gesichteten Titeln"
+    },
+    {
+     "titel": "IT System Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 53 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 9,
+   "nachbarn": [
+    {
+     "id": "it-25101",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25123: 9 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25124",
+   "cluster": "it",
+   "unterfeld": "Projekt & Test",
+   "gruppe": "IT-Projektleitung und Produktverantwortung (Scrum, Product Owner)",
+   "isco08": "2512",
+   "isco08_en": "Software developers",
+   "ch_isco19": "25124",
+   "de": [
+    "Scrum Master",
+    "Product Owner",
+    "IT-Projektleiter/in",
+    "EDV-Projektleiter/in",
+    "ICT-Projektleiter/in",
+    "ICT Project Leader",
+    "ICT-Projektmanager/in",
+    "ICT-PMO-Mitarbeiter/in",
+    "ICT Program Manager/in",
+    "ICT Program Manager",
+    "ICT Project Manager",
+    "EDV-Projektassistent/in",
+    "ICT-Programm-Manager/in",
+    "Informatikprojektchef/in"
+   ],
+   "fr": [
+    "Scrum Master",
+    "Product Owner",
+    "Chef de projet IT / Cheffe de projet IT",
+    "Chef spécialiste des projets TED / Cheffe spécialiste des projets TED"
+   ],
+   "it": [
+    "Scrum Master",
+    "Product Owner",
+    "Capoprogetto IT",
+    "Capo progettista EED"
+   ],
+   "en": [
+    "Scrum Master",
+    "IT-project leader",
+    "Project leader in electronic data processing",
+    "ICT project leader",
+    "ICT program manager",
+    "ICT project manager",
+    "Project leader informatics",
+    "ICT project management officer"
+   ],
+   "en_esco": [
+    "ICT project manager",
+    "IT projects manager",
+    "IT project manager",
+    "web projects manager",
+    "web project manager",
+    "ICT project managers"
+   ],
+   "web": [
+    {
+     "titel": "Product Owner",
+     "sprache": "de/en",
+     "haeufigkeit": 19,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 19 von 73 gesichteten Titeln"
+    },
+    {
+     "titel": "IT-Projektleiter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 8,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 8 von 73 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP)",
+   "anzahl_titel": 25,
+   "nachbarn": [
+    {
+     "id": "it-13300",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: ICT project management; apply conflict management; create project specifications"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: identify legal requirements"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: create project specifications"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25124: 25 aktive Titel",
+    "ESCO «ICT project manager» http://data.europa.eu/esco/occupation/8b6388a4-4904-471b-9331-d3b1211f5525 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25130",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Web- und Multimedia-Entwicklung",
+   "isco08": "2513",
+   "isco08_en": "Web and multimedia developers",
+   "ch_isco19": "25130",
+   "de": [
+    "Webproducer/in",
+    "Web Engineer",
+    "Mediamatiker/in",
+    "Webdeveloper/in",
+    "Webentwickler/in",
+    "Web Consultant",
+    "Web-Entwickler/in",
+    "Spielkonzipierer/in",
+    "Internetentwickler/in",
+    "Multimedia Producer",
+    "Screen Communicator",
+    "Web Project Manager/in",
+    "Videospieltechniker/in",
+    "Multimediaentwickler/in"
+   ],
+   "fr": [
+    "Webproducer",
+    "Web Engineer",
+    "Médiamaticien / Médiamaticienne",
+    "Webdeveloper"
+   ],
+   "it": [
+    "Webproducer",
+    "Web Engineer",
+    "Mediamatico / Mediamatica",
+    "Webdeveloper"
+   ],
+   "en": [
+    "Webproducer",
+    "Web engineer",
+    "Mediamatics technician",
+    "Webdeveloper",
+    "Web consultant",
+    "Multimedia producer",
+    "Screen communicator",
+    "Web project manager",
+    "Telematics project manager"
+   ],
+   "en_esco": [
+    "web developer",
+    "web programmer",
+    "web application developer",
+    "web engineer",
+    "web developers",
+    "web specialist"
+   ],
+   "web": [
+    {
+     "titel": "Web Developer / Webentwickler/in",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 55 gesichteten Titeln"
+    },
+    {
+     "titel": "Frontend Developer / Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 8,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 8 von 55 gesichteten Titeln"
+    },
+    {
+     "titel": "Full-Stack Developer",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 55 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ, Berufsprüfung (BP), höhere Fachprüfung (HFP), HF/TS",
+   "anzahl_titel": 29,
+   "nachbarn": [
+    {
+     "id": "it-25121",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: analyse software specifications; computer programming; create flowchart diagram"
+    },
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: computer programming; debug software; provide technical documentation"
+    },
+    {
+     "id": "it-35140",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: style sheet languages; use software libraries"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "medien",
+     "grund": "ESCO «digital media designer» (ISCO 2166, Grafik/Multimedia); Titel Mediamatiker/in im Zuweisungsschlüssel"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25130: 29 aktive Titel",
+    "ESCO «web developer» http://data.europa.eu/esco/occupation/c40a2919-48a9-40ea-b506-1f34f693496d (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25140",
+   "cluster": "it",
+   "unterfeld": "Entwicklung & Architektur",
+   "gruppe": "Applikationsprogrammierung und Entwicklung (inkl. DevOps, Data Science)",
+   "isco08": "2514",
+   "isco08_en": "Applications programmers",
+   "ch_isco19": "25140",
+   "de": [
+    "Modulspezialist/in",
+    "DevOps Engineer",
+    "Data Analyst ICT",
+    "Data Scientist ICT",
+    "Application Engineer",
+    "Big Data Analyst ICT",
+    "Applikationsentwickler/in",
+    "Application Integrator",
+    "Applikations-Ingenieur/in",
+    "Anwendungsprogrammierer/in",
+    "Applikations-Integrator",
+    "ICT Application Engineer",
+    "Modulverantwortlicher SAP / Modulverantwortliche SAP",
+    "Business Data Analyst ICT"
+   ],
+   "fr": [
+    "Spécialiste de module",
+    "DevOps Engineer",
+    "Data Analyst ICT",
+    "Data Scientist ICT"
+   ],
+   "it": [
+    "Specialista di moduli",
+    "DevOps Engineer",
+    "Data Analyst ICT",
+    "Data Scientist ICT"
+   ],
+   "en": [
+    "DevOps Engineer",
+    "Data analyst ICT",
+    "Data scientist ICT",
+    "Application engineer",
+    "Big data analyst ICT",
+    "Application developer",
+    "ICT application engineer",
+    "Business data analyst ICT"
+   ],
+   "en_esco": [
+    "data scientist",
+    "data scientists",
+    "data engineer",
+    "research data scientist",
+    "data expert",
+    "data research scientist"
+   ],
+   "web": [
+    {
+     "titel": "Java Developer / Entwickler",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 96 gesichteten Titeln"
+    },
+    {
+     "titel": "DevOps Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 7,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 7 von 96 gesichteten Titeln"
+    },
+    {
+     "titel": "Mobile Developer / Applications",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 96 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ, Berufsprüfung (BP)",
+   "anzahl_titel": 20,
+   "nachbarn": [
+    {
+     "id": "it-25210",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: design database scheme; resource description framework query language"
+    },
+    {
+     "id": "it-25101",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "wissenschaft",
+     "grund": "«Data Scientist» führt der BFS-Zuweisungsschlüssel auch unter 21200 (Mathematik/Statistik)"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25140: 20 aktive Titel",
+    "ESCO «data scientist» http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25191",
+   "cluster": "it",
+   "unterfeld": "Projekt & Test",
+   "gruppe": "Software-Test und Qualitätssicherung",
+   "isco08": "2519",
+   "isco08_en": "Software and applications developers and analysts not elsewhere classified",
+   "ch_isco19": "25191",
+   "de": [
+    "Tester (ICT) / Testerin (ICT)",
+    "Test Designer",
+    "ICT Testmanager",
+    "ICT-Testmanager/in",
+    "Testkoordinator/in",
+    "Test-Analytiker/in",
+    "Informatiktester/in",
+    "ICT Test Manager",
+    "Testleiter (ICT) / Testleiterin (ICT)",
+    "ICT Test Engineer",
+    "Applikationstester/in",
+    "ICT-Test-Ingenieur",
+    "ICT Quality Manager",
+    "Leiter Testing (ICT) / Leiterin Testing (ICT)"
+   ],
+   "fr": [
+    "Testeur (ICT) / Testeuse (ICT)",
+    "Concepteur de test / Conceptrice de test",
+    "ICT Testmanager",
+    "Gestionnaire de test TIC"
+   ],
+   "it": [
+    "Tester (ICT)",
+    "Test Designer",
+    "ICT Testmanager",
+    "Responsabile Test ICT"
+   ],
+   "en": [
+    "Test designer",
+    "ICT testmanager",
+    "ICT test manager",
+    "ICT test engineer",
+    "ICT quality manager",
+    "Data quality manager",
+    "Quality system manager",
+    "Test automation engineer"
+   ],
+   "en_esco": [
+    "ICT test analyst",
+    "IT test analyst",
+    "test designer",
+    "software tester",
+    "application software tester",
+    "unit tester",
+    "application tester",
+    "software application tester",
+    "tester",
+    "module tester"
+   ],
+   "web": [
+    {
+     "titel": "Software Test Engineer / Tester",
+     "sprache": "de/en",
+     "haeufigkeit": 11,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 11 von 61 gesichteten Titeln"
+    },
+    {
+     "titel": "Test Manager",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 61 gesichteten Titeln"
+    },
+    {
+     "titel": "Teamleiter Testing",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 61 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 31,
+   "nachbarn": [
+    {
+     "id": "it-25101",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gleiche ISCO-08-Untergruppe 251"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25191: 31 aktive Titel",
+    "ESCO «ICT test analyst» http://data.europa.eu/esco/occupation/0ab5c12c-c1c1-4772-8345-aa287d0e391d (Abruf 2026-11-16)",
+    "ESCO «software tester» http://data.europa.eu/esco/occupation/106f79e4-6264-45f1-9e7a-297435cd684b (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25210",
+   "cluster": "it",
+   "unterfeld": "Daten",
+   "gruppe": "Datenbanken, Data Engineering, Data Warehouse",
+   "isco08": "2521",
+   "isco08_en": "Database designers and administrators",
+   "ch_isco19": "25210",
+   "de": [
+    "Datamanager/in",
+    "Database Manager/in",
+    "DB-Administrator",
+    "Datenbank Manager",
+    "Database Engineer",
+    "Datenbankverwalter/in",
+    "Datenadministrator/in",
+    "Energiedatenmanager/in",
+    "Datenbankentwickler/in",
+    "Datenbankspezialist/in",
+    "Datenbank-Architekt/in",
+    "Datenbank-Spezialist/in",
+    "Database Administrator",
+    "Data Warehouse Engineer"
+   ],
+   "fr": [
+    "Datamanager",
+    "Gestionnaire de bases de données (Database Manager)",
+    "Administrateur de bases de données / Administratrice de bases de données",
+    "Datenbank Manager"
+   ],
+   "it": [
+    "Data manager",
+    "Amministratore di basi di dati (Database Manager) / Amministratrice di basi di dati (Database Manager)",
+    "Amministratore DB / Amministratrice DB",
+    "Datenbank Manager"
+   ],
+   "en": [
+    "Data manager",
+    "Database manager",
+    "Database engineer",
+    "Database administrator",
+    "Data warehouse engineer",
+    "Aeronautical database editor"
+   ],
+   "en_esco": [
+    "database administrator",
+    "database manager",
+    "DBA",
+    "database administrators",
+    "data manager",
+    "data administrator",
+    "database configurator",
+    "data base administrator",
+    "data base administrators",
+    "database developer"
+   ],
+   "web": [
+    {
+     "titel": "Data Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 6,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 6 von 55 gesichteten Titeln"
+    },
+    {
+     "titel": "Datenbank-Administrator/in",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 55 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 19,
+   "nachbarn": [
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply information security policies; collect customer feedback on applications; perform backups"
+    },
+    {
+     "id": "it-25291",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: interpret technical texts; maintain database security"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: create data models; identify customer requirements"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25210: 19 aktive Titel",
+    "ESCO «database administrator» http://data.europa.eu/esco/occupation/8c57af09-719c-42b3-be40-6ed4946236cc (Abruf 2026-11-16)",
+    "ESCO «database developer» http://data.europa.eu/esco/occupation/b11e1742-5e28-4270-b081-b0193d85ee7d (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25220",
+   "cluster": "it",
+   "unterfeld": "Betrieb & Infrastruktur",
+   "gruppe": "Systemadministration und -betrieb",
+   "isco08": "2522",
+   "isco08_en": "Systems administrators",
+   "ch_isco19": "25220",
+   "de": [
+    "Systembetreuer/in",
+    "Systemunterhalter/in",
+    "EDV-Administrator/in",
+    "EDV-Systembetreuer/in",
+    "CAD-Systembetreuer/in",
+    "Systemadministrator/in",
+    "EDV-Systemverwalter/in",
+    "ICT-System-Techniker/in",
+    "ICT System Specialist",
+    "ICT-System-Spezialist/in",
+    "System-/Netzwerkmanager/in",
+    "ICT System Administrator",
+    "ICT-System-Administrator/in",
+    "Informatiker EFZ, Systemtechnik / Informatikerin EFZ, Systemtechnik"
+   ],
+   "fr": [
+    "Surveillant de systèmes / Surveillante de systèmes",
+    "Employé spécialisé pour l'entretien de systèmes / Employée spécialisée pour l'entretien de systèmes",
+    "Administrateur TED / Administratrice TED",
+    "Responsable du système d'exploitation informatique"
+   ],
+   "it": [
+    "Sorvegliante sistemista",
+    "Specialista gestione sistemi",
+    "Amministratore EED / Amministratrice EED",
+    "Assistente sistemista EED"
+   ],
+   "en": [
+    "System administrator",
+    "ICT system specialist",
+    "ICT system administrator"
+   ],
+   "en_esco": [
+    "ICT system administrator",
+    "enterprise administrator",
+    "IT system administrator",
+    "ICT systems administrator",
+    "ICT sysadmins",
+    "IT systems administrator",
+    "ICT sysadmin",
+    "ICT systems administrators",
+    "system and network administrator",
+    "server administrator"
+   ],
+   "web": [
+    {
+     "titel": "IT-Systemadministrator/in",
+     "sprache": "de/en",
+     "haeufigkeit": 11,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 11 von 80 gesichteten Titeln"
+    },
+    {
+     "titel": "System Engineer (Microsoft / Citrix)",
+     "sprache": "de/en",
+     "haeufigkeit": 22,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 22 von 80 gesichteten Titeln"
+    },
+    {
+     "titel": "M365 / Modern Workplace Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 7,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 7 von 80 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ",
+   "anzahl_titel": 17,
+   "nachbarn": [
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: migrate existing data; quality assurance methodologies"
+    },
+    {
+     "id": "it-25291",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: interpret technical texts; quality assurance methodologies"
+    },
+    {
+     "id": "it-35120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: solve ICT system problems; support ICT system users"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25220: 17 aktive Titel",
+    "ESCO «ICT system administrator» http://data.europa.eu/esco/occupation/9e2e6e1e-363b-4e1b-a673-7bc0f7343300 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25230",
+   "cluster": "it",
+   "unterfeld": "Betrieb & Infrastruktur",
+   "gruppe": "Netzwerk-Engineering und -Betrieb",
+   "isco08": "2523",
+   "isco08_en": "Computer network professionals",
+   "ch_isco19": "25230",
+   "de": [
+    "Lan Engineer",
+    "Netzingenieur/in",
+    "Netzwerkmanager/in",
+    "Netzwerkdesigner/in",
+    "Network Engineer",
+    "Netzwerkspezialist/in",
+    "Netzwerk-Spezialist/in",
+    "Netzwerkadministrator/in",
+    "Network Administrator",
+    "Netzwerk-Administrator/in",
+    "Computernetzwerk-Spezialist/in",
+    "Datenkommunikationspezialist ICT / Datenkommunikationspezialistin ICT",
+    "ICT-System- und Netzwerktechniker/in",
+    "Informatik-Kommunikationsspezialist/in"
+   ],
+   "fr": [
+    "Ingénieur de réseau local (RLE) / Ingénieure de réseau local (RLE)",
+    "Ingénieur de réseau / Ingénieure de réseau",
+    "Manager de réseaux (informatique)",
+    "Concepteur de réseaux / Conceptrice de réseaux"
+   ],
+   "it": [
+    "Lan Engineer",
+    "Ingegnere in reti di distribuzione",
+    "Manager di reti (informatica)",
+    "Progettista di reti"
+   ],
+   "en": [
+    "Lan engineer",
+    "Network engineer",
+    "Network manager",
+    "Network specialist",
+    "Networking specialist",
+    "Network administrator",
+    "Computer network specialist",
+    "Certified novell engineer"
+   ],
+   "en_esco": [
+    "ICT network engineer",
+    "network configurator",
+    "networks engineer",
+    "networks developer",
+    "network developer",
+    "networks designer",
+    "network engineers",
+    "ICT network administrator",
+    "network administrators",
+    "network support"
+   ],
+   "web": [
+    {
+     "titel": "Network Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 10,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 10 von 22 gesichteten Titeln"
+    },
+    {
+     "titel": "Netzwerk-Spezialist/in",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 22 gesichteten Titeln"
+    },
+    {
+     "titel": "Ingénieur réseau",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 22 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP)",
+   "anzahl_titel": 20,
+   "nachbarn": [
+    {
+     "id": "it-25130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: computer programming; debug software; provide technical documentation"
+    },
+    {
+     "id": "it-25210",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply information security policies; collect customer feedback on applications; perform backups"
+    },
+    {
+     "id": "it-25121",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: collect customer feedback on applications; computer programming; provide technical documentation"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25230: 20 aktive Titel",
+    "ESCO «ICT network engineer» http://data.europa.eu/esco/occupation/cf2b03cd-feb7-4f47-90f6-ff1ed6016d3d (Abruf 2026-11-16)",
+    "ESCO «ICT network administrator» http://data.europa.eu/esco/occupation/81480b40-a318-47f3-9b2c-56b69ed67d95 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-25291",
+   "cluster": "it",
+   "unterfeld": "Sicherheit",
+   "gruppe": "IT-Sicherheit / Cyber Security",
+   "isco08": "2529",
+   "isco08_en": "Database and network professionals not elsewhere classified",
+   "ch_isco19": "25291",
+   "de": [
+    "Data Miner/in",
+    "IT Security Expert",
+    "Firewall-Spezialist/in",
+    "IT Security Officer",
+    "ICT Security Expert",
+    "ICT Security Manager",
+    "ICT Security Officer",
+    "ICT Security Engineer",
+    "ICT Security Architect",
+    "ICT-Sicherheitsmanager/in",
+    "ICT Security Specialist",
+    "ICT-Security-Spezialist/in",
+    "Cyber Security Specialist",
+    "IT-Sicherheitsbeauftragter / IT-Sicherheitsbeauftragte"
+   ],
+   "fr": [
+    "Data Miner",
+    "IT Security Expert",
+    "Spécialiste de barrières de sécurité (Firewall)",
+    "IT Security Officer"
+   ],
+   "it": [
+    "Data Miner",
+    "IT Security Expert",
+    "Specialista Firewall",
+    "IT Security Officer"
+   ],
+   "en": [
+    "Data miner",
+    "IT security expert",
+    "IT security officer",
+    "ICT security expert",
+    "ICT security manager",
+    "ICT security officer",
+    "ICT security engineer",
+    "ICT security architect",
+    "ICT security specialist",
+    "Cyber security specialist"
+   ],
+   "en_esco": [
+    "ICT security administrator",
+    "network security administrator",
+    "system security administrator",
+    "ICT security administrators",
+    "IT security administrator"
+   ],
+   "web": [
+    {
+     "titel": "Cyber Security Engineer / Analyst",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 51 gesichteten Titeln"
+    },
+    {
+     "titel": "IT-/ICT-Security-Spezialist/in",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 51 gesichteten Titeln"
+    },
+    {
+     "titel": "Information Security Officer",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 51 gesichteten Titeln"
+    },
+    {
+     "titel": "Penetration Testing / Red Teaming",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 51 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP)",
+   "anzahl_titel": 30,
+   "nachbarn": [
+    {
+     "id": "it-25210",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: interpret technical texts; maintain database security"
+    },
+    {
+     "id": "it-25220",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: interpret technical texts; quality assurance methodologies"
+    },
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: quality assurance methodologies"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25291: 30 aktive Titel",
+    "ESCO «ICT security administrator» http://data.europa.eu/esco/occupation/0464b062-cea6-4164-b10d-956c61956ae7 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35100",
+   "cluster": "it",
+   "unterfeld": "Support",
+   "gruppe": "ICT-Fachpersonen, allgemein (Informatiker/in, Spezialist/in)",
+   "isco08": "351",
+   "isco08_en": "ICT operations and user support technicians",
+   "ch_isco19": "35100",
+   "de": [
+    "EDV-Spezialist/in",
+    "CAM-Spezialist/in",
+    "EDV-Mitarbeiter/in",
+    "EDV-Angestellter / EDV-Angestellte",
+    "Informatikangestellter / Informatikangestellte",
+    "Informatik-Sachbearbeiter/in"
+   ],
+   "fr": [
+    "Spécialiste TED",
+    "Spécialiste CAM",
+    "Collaborateur TED / Collaboratrice TED",
+    "Employé TED / Employée TED"
+   ],
+   "it": [
+    "Specialista EED",
+    "Specialista CAM",
+    "Collaboratore EED / Collaboratrice EED",
+    "Impiegato EED / Impiegata EED"
+   ],
+   "en": [],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "IT Spezialist",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 39 gesichteten Titeln"
+    },
+    {
+     "titel": "Informatiker/in",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 39 gesichteten Titeln"
+    },
+    {
+     "titel": "ICT Servicedesk Mitarbeiter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 39 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 6,
+   "nachbarn": [
+    {
+     "id": "it-35110",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    },
+    {
+     "id": "it-35120",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    },
+    {
+     "id": "it-35130",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35100: 6 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35110",
+   "cluster": "it",
+   "unterfeld": "Betrieb & Infrastruktur",
+   "gruppe": "ICT-Betrieb (Techniker/in)",
+   "isco08": "3511",
+   "isco08_en": "ICT operations technicians",
+   "ch_isco19": "35110",
+   "de": [
+    "Pupitreur / Pupitreuse",
+    "Locher EDP / Locherin EDP",
+    "EDV-Locher/in",
+    "EDV-Helfer/in",
+    "EDV-Logist/in",
+    "EDV-Planer/in",
+    "EDV-Beamter / EDV-Beamtin",
+    "Implementer / Implementiererin",
+    "IC-Techniker/in",
+    "Systemplaner/in",
+    "EDV-Operator/in",
+    "EDV-Fachmann / EDV-Fachfrau",
+    "EDV-Arbeiter/in",
+    "EDP-Fachmann / EDP-Fachfrau"
+   ],
+   "fr": [
+    "Pupitreur / Pupitrice",
+    "Perforeur EDP / Perforeuse EDP",
+    "Perforateur TED / Perforatrice TED",
+    "Aide TED"
+   ],
+   "it": [
+    "Consollista",
+    "Perforatore EDP / Perforatrice EDP",
+    "Perforatore EED / Perforatrice EED",
+    "Aiuto EED"
+   ],
+   "en": [
+    "Implementer",
+    "Ic technician",
+    "Micro editor",
+    "ICT operator",
+    "EDP operator",
+    "IT dispatcher",
+    "EDP dispatcher",
+    "EDP supervisor",
+    "System operator",
+    "Recovery manager"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Technicien IT",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 43 gesichteten Titeln"
+    },
+    {
+     "titel": "IT Coordinator / Koordinator",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 43 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: HF/TS",
+   "anzahl_titel": 99,
+   "nachbarn": [
+    {
+     "id": "it-35120",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    },
+    {
+     "id": "it-35130",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    },
+    {
+     "id": "it-35140",
+     "grund": "gleiche ISCO-08-Untergruppe 351"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35110: 99 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35120",
+   "cluster": "it",
+   "unterfeld": "Support",
+   "gruppe": "Anwenderunterstützung / Helpdesk / Service Desk",
+   "isco08": "3512",
+   "isco08_en": "ICT user support technicians",
+   "ch_isco19": "35120",
+   "de": [
+    "PC-Betreuer/in",
+    "IT-Techniker/in",
+    "EDV-Betreuer/in",
+    "IT-Supporter/in",
+    "PC-Supporter/in",
+    "ICT-Fachmann / ICT-Fachfrau",
+    "PC-Techniker/in",
+    "EDV-Techniker/in",
+    "EDV-Supporter/in",
+    "PC-Spezialist/in",
+    "ICT Supporter",
+    "ICT Technican",
+    "ICT-Techniker/in",
+    "ICT Technician"
+   ],
+   "fr": [
+    "Surveillant sur PC / Surveillante sur PC",
+    "Technicien IT / Technicienne IT",
+    "Surveillant TED / Surveillante TED",
+    "IT-Supporter"
+   ],
+   "it": [
+    "Assistente su PC",
+    "Tecnico IT / Tecnica IT",
+    "Assistente consulente EED",
+    "IT-Supporter"
+   ],
+   "en": [
+    "IT technician",
+    "Pc supporter",
+    "EDP supporter",
+    "ICT supporter",
+    "ICT technician",
+    "Plotter supporter",
+    "Software supporter",
+    "ICT helpdesk agent",
+    "ICT service manager",
+    "IT super user"
+   ],
+   "en_esco": [
+    "ICT help desk agent",
+    "IT help desk advisor",
+    "ICT service desk agent",
+    "ICT help desk advisor",
+    "IT help desk agent",
+    "ICT help desk agents",
+    "ICT helpdesk agents",
+    "ICT helpdesk agent"
+   ],
+   "web": [
+    {
+     "titel": "IT-/ICT-Supporter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 17,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 17 von 103 gesichteten Titeln"
+    },
+    {
+     "titel": "Service Desk",
+     "sprache": "de/en",
+     "haeufigkeit": 12,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 12 von 103 gesichteten Titeln"
+    },
+    {
+     "titel": "2nd Level Support",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 103 gesichteten Titeln"
+    },
+    {
+     "titel": "Support Specialist",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 103 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EBA, EFZ, HF/TS",
+   "anzahl_titel": 63,
+   "nachbarn": [
+    {
+     "id": "it-25220",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: solve ICT system problems; support ICT system users"
+    },
+    {
+     "id": "it-25111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: solve ICT system problems"
+    },
+    {
+     "id": "it-25112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: solve ICT system problems"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35120: 63 aktive Titel",
+    "ESCO «ICT help desk agent» http://data.europa.eu/esco/occupation/aaeec9a7-dc57-4485-890c-86b3eef735f9 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35130",
+   "cluster": "it",
+   "unterfeld": "Betrieb & Infrastruktur",
+   "gruppe": "Netzwerk- und Systemtechnik (Techniker/in, Telematik)",
+   "isco08": "3513",
+   "isco08_en": "Computer network and systems technicians",
+   "ch_isco19": "35130",
+   "de": [
+    "Telematiker/in",
+    "LAN-Betreuer/in",
+    "WAN-Supporter/in",
+    "EDV-Installateur/in",
+    "Netzwerktechniker/in",
+    "Netzwerksupporter/in",
+    "Netzwerk-Operator",
+    "Netzwerk-Betreuer/in",
+    "Netzwerk-Verwalter/in",
+    "EDV-Netzwerkbetreuer/in",
+    "Betriebsinformatiker/in",
+    "ICT-Netzwerktechniker/in",
+    "ICT Network Technician",
+    "Telematiker EFZ / Telematikerin EFZ"
+   ],
+   "fr": [
+    "Télématicien / Télématicienne",
+    "Assistant LAN / Assistante LAN",
+    "Supporter WAN",
+    "Installateur en informatique / Installatrice en informatique"
+   ],
+   "it": [
+    "Telematico / Telematica",
+    "Addetto LAN / Addetta LAN",
+    "Consulente WAN",
+    "Installatore EED / Installatrice EED"
+   ],
+   "en": [
+    "Telematics engineer",
+    "Network supporter",
+    "ICT network technician"
+   ],
+   "en_esco": [
+    "ICT network technician",
+    "network technician",
+    "network engineer",
+    "network maintenance professional",
+    "networks technician",
+    "network technicians",
+    "IT network technician",
+    "assistant network administrator",
+    "system engineer"
+   ],
+   "web": [
+    {
+     "titel": "Network Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 7,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 7 von 59 gesichteten Titeln"
+    },
+    {
+     "titel": "ICT System & Network Engineer",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 59 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ, Berufsprüfung (BP), höhere Fachprüfung (HFP), HF/TS",
+   "anzahl_titel": 23,
+   "nachbarn": [
+    {
+     "id": "it-25230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: ICT network routing; analyse network bandwidth requirements; provide technical documentation"
+    },
+    {
+     "id": "it-25121",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: provide technical documentation"
+    },
+    {
+     "id": "it-25130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: provide technical documentation"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35130: 23 aktive Titel",
+    "ESCO «ICT network technician» http://data.europa.eu/esco/occupation/64c7d461-152c-477f-a8e2-c2c537e9d617 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35140",
+   "cluster": "it",
+   "unterfeld": "Web",
+   "gruppe": "Web-Technik (Webmaster, Web Publishing)",
+   "isco08": "3514",
+   "isco08_en": "Web technicians",
+   "ch_isco19": "35140",
+   "de": [
+    "Webmaster / Webmistress",
+    "Webpublisher/in",
+    "Web-Assistent/in",
+    "Web Supporter/in",
+    "Web-Master SIZ / Web-Mistress SIZ",
+    "Web-Publisher SIZ / Web-Publisherin SIZ",
+    "Web-Administrator/in",
+    "Website Koordinator/in"
+   ],
+   "fr": [
+    "Webmaster / Webmistress",
+    "Webpublisher",
+    "Assistant Web / Assistante Web",
+    "Web Supporter"
+   ],
+   "it": [
+    "Webmaster / Webmistress",
+    "Webpublisher",
+    "Assistente Web",
+    "Web Supporter"
+   ],
+   "en": [
+    "Webmaster",
+    "Webpublisher",
+    "Web assistant",
+    "Web supporter",
+    "Web administrator",
+    "Website coordinator"
+   ],
+   "en_esco": [
+    "webmaster",
+    "web technician",
+    "webmasters",
+    "e-commerce technician",
+    "web administrator",
+    "website administrator"
+   ],
+   "web": [
+    {
+     "titel": "Content & Channel Manager Web",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 16 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 8,
+   "nachbarn": [
+    {
+     "id": "it-25122",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: use markup languages; web programming"
+    },
+    {
+     "id": "it-25130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: style sheet languages; use software libraries"
+    },
+    {
+     "id": "it-25210",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: use scripting programming"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35140: 8 aktive Titel",
+    "ESCO «webmaster» http://data.europa.eu/esco/occupation/dc8ef7da-d2c0-4474-96a0-6d0385eeec1e (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-35220",
+   "cluster": "it",
+   "unterfeld": "Telekommunikation",
+   "gruppe": "Telekommunikationstechnik (Fernmelde, Telematik)",
+   "isco08": "3522",
+   "isco08_en": "Telecommunications engineering technicians",
+   "ch_isco19": "35220",
+   "de": [
+    "Funker/in",
+    "Bordfunker/in",
+    "Fernmelder/in",
+    "Schiffsfunker/in",
+    "Telecomberater/in",
+    "Telefontechniker/in",
+    "Fernmeldebeamter / Fernmeldebeamtin",
+    "Fernmeldeberater/in",
+    "Radiotelegrafist/in",
+    "Telematiktechniker/in",
+    "Fernmeldetechniker/in",
+    "Fernmeldeassistent/in",
+    "Fernmeldespezialist/in",
+    "Peripherie Operator"
+   ],
+   "fr": [
+    "Radiotélégraphiste",
+    "Radio-télégraphiste",
+    "Télégraphiste de bord",
+    "Employé au service des télécommunications / Employée au service des télécommunications"
+   ],
+   "it": [
+    "Marconista",
+    "Radiotelegrafista di bordo",
+    "Impiegato del servizio telecomunicazioni / Impiegata del servizio telecomunicazioni",
+    "Consulente in telecomunicazioni"
+   ],
+   "en": [
+    "Wireless operator",
+    "Shipping radio operator",
+    "Telecom consultant",
+    "Telephone technician",
+    "Telecommunications consultant",
+    "Telematics technician",
+    "Telecommunications technician",
+    "Communications specialist (telecommunications)",
+    "Communication technician",
+    "Fault-clearing service technician"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Systemtechniker",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 7 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: HF/TS, HTL",
+   "anzahl_titel": 57,
+   "nachbarn": [],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 35220: 57 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "it-74220",
+   "cluster": "it",
+   "unterfeld": "Telekommunikation",
+   "gruppe": "Installation und Service von ICT-/Telekommunikationsanlagen",
+   "isco08": "7422",
+   "isco08_en": "ICT installers and servicers",
+   "ch_isco19": "74220",
+   "de": [
+    "Monteur PTT / Monteurin PTT",
+    "Linienmeister/in",
+    "Linienmonteur/in",
+    "Telefonmonteur/in",
+    "Antennenmonteur/in",
+    "Leitungsmonteur/in",
+    "Telefonarbeiter/in",
+    "Störungsmonteur/in",
+    "Chefmonteur PTT / Chefmonteurin PTT",
+    "Fernmeldemonteur/in",
+    "Mobilfunkmonteur/in",
+    "Telematikmonteur/in",
+    "A-Telefonmonteur/in",
+    "Fiberoptikmonteur/in"
+   ],
+   "fr": [
+    "Monteur PTT / Monteuse PTT",
+    "Chef des lignes / Cheffe des lignes",
+    "Monteur de lignes téléphoniques / Monteuse de lignes téléphoniques",
+    "Monteur de téléphones / Monteuse de téléphones"
+   ],
+   "it": [
+    "Montatore PTT / Montatrice PTT",
+    "Caposquadra linee aeree",
+    "Montatore di linee (impianti TT) / Montatrice di linee (impianti TT)",
+    "Montatore di telefoni / Montatrice di telefoni"
+   ],
+   "en": [
+    "Telephone installer",
+    "Aerial fitter",
+    "Telephone line installer",
+    "Telephone worker",
+    "Telecom specialist",
+    "Electronics/telematics technician",
+    "Service technician (it)",
+    "Telecoms engineer",
+    "Electronics engineer (multimedia)",
+    "Telephone set assembler"
+   ],
+   "en_esco": [
+    "telecommunications technician",
+    "phone systems technician",
+    "telecommunications equipment installer",
+    "telecommunications installer and repairer",
+    "field-based telecommunications technician",
+    "telecoms systems technician",
+    "telecommunications systems installer",
+    "telecommunications installer",
+    "telecommunications service technician",
+    "communication line technicians"
+   ],
+   "web": [
+    {
+     "titel": "Monteur Wireless Outdoor",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 10 gesichteten Titeln"
+    },
+    {
+     "titel": "Monteur Kupfer / LWL Telekommunikation",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 10 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ, Berufsprüfung (BP)",
+   "anzahl_titel": 49,
+   "nachbarn": [
+    {
+     "id": "it-35130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: install signal repeaters"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "bau",
+     "grund": "Titel wie Elektro-Installateur/in und Netzbaumonteur/in in jobs.ch-Ausschreibungen zur Monteur-Suche"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 74220: 49 aktive Titel",
+    "ESCO «telecommunications technician» http://data.europa.eu/esco/occupation/056bef79-c125-47ab-b6b9-8eed05c9458c (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  }
  ]
 }

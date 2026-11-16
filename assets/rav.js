@@ -9,22 +9,26 @@
 
   function hay(b){
     var w = (b.web || []).map(function(x){ return x.titel; });
-    return norm([].concat(b.de || [], b.fr || [], b.it || [], b.en || [], w, [b.isco08, b.ch_isco19, b.unterfeld, b.niveau]).join(' | '));
+    return norm([].concat(b.de || [], b.fr || [], b.it || [], b.en || [], b.en_esco || [], w, [b.gruppe, b.isco08, b.isco08_en, b.ch_isco19, b.unterfeld, b.niveau]).join(' | '));
   }
   function list(arr){ return arr && arr.length ? '<ul>' + arr.map(function(x){ return '<li>' + x + '</li>'; }).join('') + '</ul>' : '<span class="empty">–</span>'; }
 
   function jobRow(b, byId){
     var de = list((b.de || []).map(esc).concat((b.fr || []).map(function(x){ return esc(x) + ' <small>(fr)</small>'; }), (b.it || []).map(function(x){ return esc(x) + ' <small>(it)</small>'; })));
-    var en = list((b.en || []).map(esc));
+    var en = list((b.en || []).map(esc).concat((b.en_esco || []).map(function(x){ return esc(x) + ' <small>(ESCO)</small>'; })));
     var web = list((b.web || []).map(function(x){ return esc(x.titel) + (x.quelle ? '<span class="src">' + esc(x.quelle) + '</span>' : ''); }));
     var nb = (b.nachbarn || []).map(function(n){
-      var t = byId[n.id]; var label = t ? (t.de && t.de[0]) : n.id;
+      var t = byId[n.id]; var label = t ? (t.gruppe || (t.de && t.de[0])) : n.id;
       return '<a href="#' + esc(n.id) + '">' + esc(label) + '</a>' + (n.grund ? ' <small>(' + esc(n.grund) + ')</small>' : '');
-    });
-    var code = (b.ch_isco19 ? 'CH-ISCO-19 ' + esc(b.ch_isco19) + '<br>' : '') + (b.isco08 ? 'ISCO-08 ' + esc(b.isco08) : '');
+    }).concat((b.nachbar_felder || []).map(function(n){
+      var t = data.cluster.filter(function(x){ return x.id === n.id; })[0];
+      return 'Feld: <a href="#c-' + esc(n.id) + '">' + esc(t ? t.de : n.id) + '</a>' + (n.grund ? ' <small>(' + esc(n.grund) + ')</small>' : '');
+    }));
+    var code = (b.ch_isco19 ? 'CH-ISCO-19<br><strong>' + esc(b.ch_isco19) + '</strong><br>' : '') + (b.isco08 ? 'ISCO-08 ' + esc(b.isco08) + (b.isco08_en ? '<span class="src">' + esc(b.isco08_en) + '</span>' : '') : '');
+    var srcs = (b.quellen || []).length ? '<details class="srcs"><summary>Quellen</summary><ul>' + b.quellen.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></details>' : '';
     return '<tr id="' + esc(b.id) + '">' +
       '<td class="code" data-l="Code">' + (code || '–') + '</td>' +
-      '<td data-l="Amtlich / Deutsch">' + de + (b.niveau ? '<span class="src">Niveau: ' + esc(b.niveau) + '</span>' : '') + '</td>' +
+      '<td data-l="Amtlich / Deutsch">' + (b.gruppe ? '<strong>' + esc(b.gruppe) + '</strong>' : '') + de + (b.anzahl_titel ? '<span class="src">' + b.anzahl_titel + ' amtliche Titel in dieser Gruppe, hier eine Auswahl</span>' : '') + (b.niveau ? '<span class="src">' + esc(b.niveau) + '</span>' : '') + srcs + '</td>' +
       '<td data-l="English">' + en + '</td>' +
       '<td data-l="Im Internet">' + web + '</td>' +
       '<td data-l="Nachbarberufe" class="nb">' + (nb.length ? nb.join('<br>') : '–') + (b.quereinstieg ? '<span class="src">Quereinstieg: ' + esc(b.quereinstieg) + '</span>' : '') + '<br><span class="st ' + esc(b.status) + '">' + esc((b.status || '').replace('_', ' ')) + '</span></td>' +
