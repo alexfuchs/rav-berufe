@@ -32,7 +32,9 @@ Die Liste ist ein **Gesprächs- und Suchhilfsmittel**. Sie macht keine Vermittlu
 Verwende nur öffentlich zugängliche Quellen und prüfe deren Nutzungsbedingungen. Gib bei jedem Datensatz die Quelle und das Abrufdatum an.
 
 **A. Amtliche Nomenklatur und Berufe**
-- Bundesamt für Statistik (BFS): Schweizer Berufsnomenklatur **CH-ISCO-19** (Codes, Bezeichnungen, Gruppen; DE/FR/IT/EN). Sie baut auf der internationalen ISCO-08 auf. Prüfe, ob eine neuere Fassung existiert, und nenne die benutzte Version.
+- Bundesamt für Statistik (BFS): Schweizer Berufsnomenklatur **CH-ISCO-19** (Codes, Bezeichnungen, Gruppen; DE/FR/IT/EN). Sie baut auf der internationalen ISCO-08 auf (4 Stellen) und ergänzt eine 5. Stelle für die Schweiz. Prüfe, ob eine neuere Fassung existiert, und nenne die benutzte Version.
+  - **Beste Datenquelle:** der **Zuweisungsschlüssel** als Excel-Datei (rund 23'000 aktive Berufsbezeichnungen mit Code, DE/FR/IT/EN, männlich/weiblich). Version 1.2 (Oktober 2022): https://dam-api.bfs.admin.ch/hub/api/dam/assets/23530845/master. Spalte `CH_ISCO_19` ist der 5-stellige Code, `ACTIVE` = 1 heisst aktive Bezeichnung. Die Datei nennt nur Einzeltitel, keine Gruppennamen; Gruppennamen sind dann sinngemäss zu formulieren und als solche zu kennzeichnen.
+  - Die Datei ist die Quelle für Code und amtlichen Titel. Prüfe zuerst, ob damit der Eintrag schon belegt ist, bevor du weitere Quellen heranziehst.
 - **Job-Room / AVAM** (SECO): die Berufsauswahl im Stellenportal der Arbeitsvermittlung. Sie zeigt, unter welchen Bezeichnungen Stellen und Profile in der RAV-Praxis erfasst werden.
 - **berufsberatung.ch** (SDBB): Berufe, Berufsfelder, Weiterbildungen, Verwandte Berufe.
 - **SBFI-Berufsverzeichnis** und Bildungsverordnungen: Berufe der beruflichen Grundbildung (EFZ, EBA) mit offiziellem Titel.
@@ -40,11 +42,13 @@ Verwende nur öffentlich zugängliche Quellen und prüfe deren Nutzungsbedingung
 
 **B. Englisch und Zusammenhänge**
 - **ISCO-08** (ILO), englische Titel.
-- **ESCO** (EU): Berufe mit **alternativen Bezeichnungen** in mehreren Sprachen und mit **Fähigkeiten und Wissen pro Beruf**. Daraus lassen sich Verwandtschaften ableiten (gemeinsame Fähigkeiten).
+- **ESCO** (EU): Berufe mit **alternativen Bezeichnungen** in mehreren Sprachen und mit **Fähigkeiten und Wissen pro Beruf**. Daraus lassen sich Verwandtschaften ableiten (gemeinsame Fähigkeiten). Öffentliche Schnittstelle: `https://ec.europa.eu/esco/api/search?language=en&type=occupation&text=<Begriff>` und `https://ec.europa.eu/esco/api/resource/occupation?language=en&uri=<URI>` (liefert `alternativeLabel`, ISCO-Gruppe und Fähigkeiten). Prüfe, dass die ISCO-Gruppe des Treffers zur gesuchten Gruppe passt; nimm sonst den Treffer nicht.
 - **O*NET OnLine** (USA): «Related Occupations» und «Alternate Titles» als Hinweis auf Verwandtschaft; Hinweis auf die US-Herkunft in der Quelle.
 
 **C. Bezeichnungen im Internet**
 - Jobportale der Schweiz, zum Beispiel jobs.ch, jobup.ch, jobscout24.ch, indeed.ch, x28.ch, LinkedIn, Job-Room. Prüfe Titel in **echten, aktuellen Ausschreibungen** und notiere Titel, die vom amtlichen Titel abweichen.
+  - Technischer Hinweis: die öffentliche Stellensuche von jobs.ch lässt sich per `https://www.jobs.ch/api/v1/public/search?rows=20&query=<Begriff>` abfragen (Parameter `query`, höchstens 20 Treffer pro Anfrage). Mit wenigen Anfragen und Pausen arbeiten, Nutzungsbedingungen beachten, Rohdaten nicht weitergeben, nur Titel mit Quelle und Datum übernehmen.
+  - Mehrere Suchbegriffe pro Berufsgruppe verwenden (deutsch und englisch) und nur Titel übernehmen, die tatsächlich in den Treffern vorkommen. Häufigkeit in der Stichprobe angeben, nicht als Marktanteil darstellen.
 - Branchen- und Berufsverbände und Lohnportale (zum Beispiel Salarium des BFS) für gebräuchliche Titel.
 
 Wenn zwei Quellen sich widersprechen, **nenne beide** und markiere den Eintrag als «zu klären». Erfinde nichts.
@@ -53,7 +57,7 @@ Wenn zwei Quellen sich widersprechen, **nenne beide** und markiere den Eintrag a
 
 «Alle Berufe» ist nicht abschliessend aufzählbar, weil Jobtitel im Internet unbegrenzt variieren. Arbeite daher mit zwei klaren Massstäben:
 
-1. **Amtliche Vollständigkeit:** jede Einheitsgruppe (4-Steller) der CH-ISCO-19 ist **mindestens einmal** erfasst. Berufe der beruflichen Grundbildung sind den passenden Gruppen zugeordnet.
+1. **Amtliche Vollständigkeit:** jede Berufsart (5-Steller) der CH-ISCO-19 ist **mindestens einmal** als Eintrag erfasst, entsprechend den 4-stelligen Berufsgattungen der ISCO-08. Ein Eintrag ist eine Berufsgruppe mit allen ihren Bezeichnungen (im Beispielfeld IT: 24 Einträge). Berufe der beruflichen Grundbildung sind den passenden Gruppen zugeordnet.
 2. **Marktabdeckung:** pro Beruf die **häufigsten** Titel aus Stellenausschreibungen (Richtwert: bis zu 10 pro Beruf, nach Häufigkeit), nicht jede Schreibvariante.
 
 Führe eine **Abdeckungstabelle** (siehe Abschnitt 8), damit sichtbar ist, was erledigt ist und was fehlt.
@@ -86,19 +90,24 @@ Liefere JSON, das direkt in die Seite übernommen werden kann (Schema entspricht
   ],
   "berufe": [
     {
-      "id": "it-2512-softwareentwickler",
+      "id": "it-25121",
       "cluster": "it",
-      "unterfeld": "Entwicklung",
+      "unterfeld": "Entwicklung & Architektur",
+      "gruppe": "Software-Entwicklung und -Architektur (sinngemässe Beschreibung)",
       "isco08": "2512",
-      "ch_isco19": "Code laut Quelle oder null",
+      "isco08_en": "Software developers",
+      "ch_isco19": "25121",
       "de": ["Softwareentwickler/in", "Informatiker/in EFZ (Applikationsentwicklung)"],
       "fr": [], "it": [],
       "en": ["Software developer"],
-      "web": [ { "titel": "Full-Stack Developer", "sprache": "en", "quelle": "jobs.ch, Abruf 2026-11-16" } ],
-      "niveau": "FH, HF, EFZ",
-      "nachbarn": [ { "id": "it-2522-systemadministrator", "grund": "gemeinsame Skripting- und Betriebskenntnisse" } ],
-      "quereinstieg": "…",
-      "quellen": ["BFS CH-ISCO-19", "ESCO …"],
+      "en_esco": ["software developer", "application programmer"],
+      "web": [ { "titel": "Fullstack Software Engineer", "sprache": "de/en", "haeufigkeit": 3, "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 53 gesichteten Titeln" } ],
+      "niveau": "Titel im Zuweisungsschlüssel nennen: FH, BP",
+      "anzahl_titel": 35,
+      "nachbarn": [ { "id": "it-25130", "grund": "gemeinsame ESCO-Kernfähigkeiten: computer programming" } ],
+      "nachbar_felder": [ { "id": "wissenschaft", "grund": "Beleg in einem Satz, nur mit Quelle" } ],
+      "quereinstieg": "",
+      "quellen": ["BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 25121: 35 aktive Titel", "ESCO «software developer» <URI> (Abruf 2026-11-16)"],
       "status": "geprüft | entwurf | zu_klären"
     }
   ]
@@ -149,3 +158,10 @@ So bleibt die Arbeit zusammenhängend. Die fertige `berufe.json` kann in die Sei
 ## 11. Hinweis
 
 Das Ergebnis ist ein Hilfsmittel und ersetzt weder die amtlichen Berufsverzeichnisse noch die Fachberatung. Die Beratungsperson prüft Einträge, bevor sie sie weitergibt.
+
+## 12. Stand der Arbeit und Referenzbeispiel
+
+- **Erledigt:** Berufsfeld **IT & Digital** (24 Berufsgruppen der CH-ISCO-19, Version 1.2) mit amtlichen Titeln, englischen Titeln, Titeln aus Stellenausschreibungen und Nachbarn. Es dient als Referenz für Format und Tiefe: https://alexfuchs.github.io/rav-berufe/ (Daten: `assets/berufe.json`).
+- **Offen:** alle anderen Berufsfelder (siehe Abschnitt 5). Gehe Feld für Feld vor, in der Reihenfolge der Abdeckungstabelle.
+- **Nicht erfasst im Referenzfeld:** Berufe, die die CH-ISCO-19 anderen Feldern zuordnet (zum Beispiel Grafik und UX unter Medien). Sie gehören ins jeweilige Feld, im IT-Feld nur als `nachbar_felder` mit Beleg.
+- **Vorgehen, das sich bewährt hat:** (1) Gruppen und Titel aus dem BFS-Zuweisungsschlüssel ziehen, (2) pro Gruppe ESCO-Treffer mit passender ISCO-Gruppe suchen, (3) pro Gruppe 3 bis 6 Suchbegriffe auf jobs.ch abfragen und nur tatsächlich gefundene Titel eintragen, (4) Nachbarn aus gemeinsamen ESCO-Kernfähigkeiten, sonst aus derselben ISCO-Untergruppe, (5) Quellen pro Eintrag festhalten. Die Skripte dazu liegen im Repository unter `_tools/`.
