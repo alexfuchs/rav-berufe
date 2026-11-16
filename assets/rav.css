@@ -1,0 +1,50 @@
+/* Berufsliste – bewusst hell, sachlich, druckbar */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#111;font:400 16px/1.55 "Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 72px}
+h1{margin:0 0 4px;font:600 28px/1.15 "Inter",system-ui,sans-serif;letter-spacing:-.01em}
+.sub{margin:0 0 20px;color:#555;max-width:70ch}
+.notice{border:1px solid #e0b000;background:#fff8dc;border-radius:8px;padding:10px 14px;margin:0 0 20px;font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.bar input[type=search]{flex:1 1 280px;min-width:0;padding:11px 14px;border:1px solid #bbb;border-radius:8px;font:inherit;background:#fff;color:#111}
+input:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid #111;outline-offset:2px}
+.btn{appearance:none;border:1px solid #111;background:#fff;color:#111;padding:10px 14px;border-radius:8px;font:600 14px/1 "Inter",system-ui,sans-serif;cursor:pointer;min-height:44px}
+.btn:hover{background:#f2f2f2}
+.langs{display:flex;gap:6px;align-items:center;font-size:14px;color:#444}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.chip{appearance:none;border:1px solid #bbb;background:#fff;color:#111;border-radius:999px;padding:8px 14px;font:500 14px/1 "Inter",system-ui,sans-serif;cursor:pointer;min-height:40px}
+.chip[aria-pressed=true]{background:#111;color:#fff;border-color:#111}
+.chip small{opacity:.65;margin-left:4px}
+.cl{border-top:2px solid #111;margin-top:28px;padding-top:14px}
+.cl h2{margin:0;font:600 22px/1.2 "Inter",system-ui,sans-serif}
+.cl .en{color:#555;font-size:14px;margin:2px 0 6px}
+.cl .desc{margin:0 0 8px;color:#333;max-width:80ch}
+.rel{margin:6px 0 12px;font-size:14px;color:#333}
+.rel a{display:inline-block;margin:2px 6px 2px 0;padding:3px 10px;border:1px solid #bbb;border-radius:999px;color:#111;text-decoration:none}
+.rel a:hover{background:#f2f2f2}
+.empty{color:#666;font-size:14px;padding:10px 0}
+.sub-h{margin:16px 0 4px;font:600 13px/1.2 "Inter",system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#555}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{padding:10px 10px 10px 0;text-align:left;vertical-align:top;border-top:1px solid #e4e4e4}
+th{font:600 12px/1.2 "Inter",system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#555;border-top:0}
+td.code{white-space:nowrap;color:#444;font:500 13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+td ul{list-style:none;margin:0;padding:0}
+td li{margin:0 0 2px}
+td .src{display:block;font-size:12px;color:#777}
+.st{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid #bbb;color:#444;white-space:nowrap}
+.st.geprüft{background:#e6f4ea;border-color:#8cc59a;color:#14532d}
+.st.entwurf{background:#fff8dc;border-color:#e0b000;color:#6b4e00}
+.st.zu_klären{background:#fde8e8;border-color:#e08a8a;color:#7a1414}
+.nb{font-size:13px;color:#444}
+.nb a{color:#111}
+mark{background:#ffe97a;color:inherit;padding:0 1px}
+.foot{margin-top:40px;border-top:1px solid #e4e4e4;padding-top:14px;font-size:13px;color:#555}
+@media (max-width:760px){
+ table,thead,tbody,tr,th,td{display:block}
+ thead{display:none}
+ tr{border-top:1px solid #e4e4e4;padding:10px 0}
+ td{border:0;padding:3px 0}
+ td::before{content:attr(data-l);display:block;font:600 11px/1.2 "Inter",system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#777;margin-top:6px}
+}
+@media print{.bar,.chips,.notice{display:none}.wrap{padding:0}a{color:#000;text-decoration:none}}

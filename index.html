@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Berufsliste Schweiz</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23111%27/%3E%3Cpath d=%27M8 22V10h8a4 4 0 010 8h-8m6 0l4 4%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%273%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/rav.css?v=1">
+</head>
+<body>
+<main class="wrap">
+  <h1>Berufsliste Schweiz</h1>
+  <p class="sub">Berufe nach Berufsfeldern und Zusammenhängen: amtliche Bezeichnung, englische Bezeichnungen und Titel, wie sie im Internet ausgeschrieben werden. Gedacht als Hilfsmittel, um Alternativen und Suchgebiete aufzuzeigen.</p>
+  <div class="notice" id="notice" hidden><strong>Stand:</strong> <span id="hint"></span></div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Beruf suchen (Deutsch, English, Titel im Internet, Code)" aria-label="Beruf suchen">
+    <button class="btn" type="button" id="csv">Als CSV laden</button>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Berufsfeld"></div>
+  <p class="sub" id="info" role="status" aria-live="polite"></p>
+  <div id="out"></div>
+  <p class="foot">Die Liste ist ein Hilfsmittel und ersetzt weder die amtlichen Berufsverzeichnisse noch die Fachberatung. Einträge mit Status «entwurf» sind noch nicht anhand der Quellen geprüft.</p>
+</main>
+<script src="assets/rav.js"></script>
+</body>
+</html>
