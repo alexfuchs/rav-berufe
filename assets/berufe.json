@@ -1,9 +1,9 @@
 {
  "meta": {
-  "version": "1-it",
+  "version": "2-it+buero",
   "stand": "2026-11-16",
   "nomenklatur": "CH-ISCO-19, Zuweisungsschlüssel V1.2 (Oktober 2022), BFS",
-  "hinweis": "Berufsfeld «IT & Digital» ist befüllt (geprüft gegen BFS-Zuweisungsschlüssel, ESCO und jobs.ch). Alle anderen Felder sind noch leer.",
+  "hinweis": "Befüllt (geprüft gegen BFS-Zuweisungsschlüssel, ESCO und jobs.ch): IT & Digital, Büro & Administration. Alle anderen Felder sind noch leer.",
   "quellen": [
    "BFS, Schweizer Berufsnomenklatur CH-ISCO-19, Zuweisungsschlüssel V1.2: https://dam-api.bfs.admin.ch/hub/api/dam/assets/23530845/master (Abruf 2026-11-16)",
    "ESCO (Europäische Kommission): https://esco.ec.europa.eu, API https://ec.europa.eu/esco/api (Abruf 2026-11-16)",
@@ -144,8 +144,14 @@
    "id": "buero",
    "de": "Büro & Administration",
    "en": "Office & Administration",
-   "beschreibung": "",
-   "unterfelder": [],
+   "beschreibung": "Sekretariat und Assistenz, Sachbearbeitung, Rechnungswesen und Personal, Kundendienst und Empfang, Archiv und Bibliothek. Basis: CH-ISCO-19 Gruppen 334, 41, 42, 431 und 441. Material- und Transportsachbearbeitung (432) sowie Postzustellung (44120) gehören ins Feld Logistik & Verkehr.",
+   "unterfelder": [
+    "Sekretariat & Assistenz",
+    "Bürobetrieb & Sachbearbeitung",
+    "Rechnungswesen & Personal",
+    "Kundendienst & Empfang",
+    "Archiv, Bibliothek & Dokumente"
+   ],
    "verwandt": [
     {
      "id": "finanzen",
@@ -2555,6 +2561,2755 @@
    "quellen": [
     "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 74220: 49 aktive Titel",
     "ESCO «telecommunications technician» http://data.europa.eu/esco/occupation/056bef79-c125-47ab-b6b9-8eed05c9458c (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-33400",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Verwaltungsfachleute, allgemein",
+   "isco08": "334",
+   "isco08_en": "Administrative and specialized secretaries",
+   "ch_isco19": "33400",
+   "de": [
+    "Aussenbeamter / Aussenbeamtin"
+   ],
+   "fr": [
+    "Fonctionnaire au service externe"
+   ],
+   "it": [
+    "Funzionario del servizio esterno / Funzionaria del servizio esterno"
+   ],
+   "en": [],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Sachbearbeiter/in (öffentliche Verwaltung)",
+     "sprache": "de/en",
+     "haeufigkeit": 20,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 20 von 20 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 1,
+   "nachbarn": [
+    {
+     "id": "bu-33410",
+     "grund": "gleiche ISCO-08-Untergruppe 334"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gleiche ISCO-08-Untergruppe 334"
+    },
+    {
+     "id": "bu-33430",
+     "grund": "gleiche ISCO-08-Untergruppe 334"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 33400: 1 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-33410",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Büroleitung / Teamleitung Administration",
+   "isco08": "3341",
+   "isco08_en": "Office supervisors",
+   "ch_isco19": "33410",
+   "de": [
+    "Bürochef/in",
+    "Büroplaner/in",
+    "Supervisor/in",
+    "Bürodirektor/in",
+    "Chefsekretär/in",
+    "Lohnbürochef/in",
+    "Auftragsleiter/in",
+    "Office Manager/in",
+    "Postdienstchef/in",
+    "Büroorganisator/in",
+    "Telegraphenchef/in",
+    "Gruppenchef PTT / Gruppenchefin PTT",
+    "Reservationschef/in",
+    "Vizechefsekretär/in"
+   ],
+   "fr": [
+    "Chef de bureau / Cheffe de bureau",
+    "Planificateur de bureau / Planificatrice de bureau",
+    "Superviseur / Superviseuse",
+    "Directeur de bureau / Directrice de bureau"
+   ],
+   "it": [
+    "Capoufficio",
+    "Pianificatore d'ufficio / Pianificatrice d'ufficio",
+    "Supervisore / Supervisora",
+    "Direttore d'ufficio / Direttrice d'ufficio"
+   ],
+   "en": [
+    "Office planner",
+    "Chief secretary",
+    "Office manager",
+    "Office organiser",
+    "Customer service manager",
+    "Call centre manager",
+    "Contact centre supervisor",
+    "Airline reservation manager",
+    "Digital Collaboration Specialist"
+   ],
+   "en_esco": [
+    "office manager",
+    "office supervisor",
+    "office coordinator",
+    "general office administrator",
+    "administrative manager",
+    "administrative services manager",
+    "administrative supervisor"
+   ],
+   "web": [
+    {
+     "titel": "Office Manager",
+     "sprache": "de/en",
+     "haeufigkeit": 12,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 12 von 45 gesichteten Titeln"
+    },
+    {
+     "titel": "Back-Office Manager",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 45 gesichteten Titeln"
+    },
+    {
+     "titel": "Administration & Office Management",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 45 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP)",
+   "anzahl_titel": 54,
+   "nachbarn": [
+    {
+     "id": "bu-43120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties; write work-related reports"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties"
+    },
+    {
+     "id": "bu-33430",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: manage office facility systems"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 33410: 54 aktive Titel",
+    "ESCO «office manager» http://data.europa.eu/esco/occupation/6e6839b6-099c-4802-906e-7f2c8203ee69 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-33420",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Rechts- und Notariatssekretariat",
+   "isco08": "3342",
+   "isco08_en": "Legal secretaries",
+   "ch_isco19": "33420",
+   "de": [
+    "Anwaltssekretär/in",
+    "Notariatssekretär/in",
+    "Anwaltsangestellter / Anwaltsangestellte",
+    "Juristischer Beamter / Juristische Beamtin",
+    "Notariatsangestellter / Notariatsangestellte"
+   ],
+   "fr": [
+    "Secrétaire d'avocat",
+    "Secrétaire de notaire",
+    "Employé d'avocat / Employée d'avocat",
+    "Fonctionnaire juridique"
+   ],
+   "it": [
+    "Segretario d'avvocato / Segretaria d'avvocato",
+    "Segretario di studio d'avvocatura / Segretaria di studio d'avvocatura",
+    "Segretario di notaio / Segretaria di notaio",
+    "Impiegato di studio d'avvocatura / Impiegata di studio d'avvocatura"
+   ],
+   "en": [
+    "Legal secretary",
+    "Notary clerk",
+    "Notary employee"
+   ],
+   "en_esco": [
+    "legal administrative assistant",
+    "paralegal assistant",
+    "certified legal secretary specialist",
+    "legal administrative secretary",
+    "certified legal assistant",
+    "legal executive secretary",
+    "legal secretary",
+    "litigation secretary",
+    "legal assistant",
+    "litigation legal assistant"
+   ],
+   "web": [
+    {
+     "titel": "Partnerassistent/in",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 20 gesichteten Titeln"
+    },
+    {
+     "titel": "Notariatsassistent/in",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 20 gesichteten Titeln"
+    },
+    {
+     "titel": "Paralegal / Legal Assistant",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 20 gesichteten Titeln"
+    },
+    {
+     "titel": "Secrétaire juridique",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 20 gesichteten Titeln"
+    },
+    {
+     "titel": "Staatsanwaltsassistent/in",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 20 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 7,
+   "nachbarn": [
+    {
+     "id": "bu-33430",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: manage personnel agenda; observe confidentiality"
+    },
+    {
+     "id": "bu-43120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties; perform office routine activities"
+    },
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "recht",
+     "grund": "Titel Paralegal, Notariats- und Staatsanwaltsassistent/in in Ausschreibungen; ESCO «legal secretary»"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 33420: 7 aktive Titel",
+    "ESCO «legal administrative assistant» http://data.europa.eu/esco/occupation/0264b794-3771-47aa-a675-78bf13b62ee7 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-33430",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Verwaltungs- und Direktionssekretariat",
+   "isco08": "3343",
+   "isco08_en": "Administrative and executive secretaries",
+   "ch_isco19": "33430",
+   "de": [
+    "Kanzler/in",
+    "Kanzlist/in",
+    "Registrar/in",
+    "Koordinator/in",
+    "Amtssekretär/in",
+    "Ratssekretär/in",
+    "Amtsschreiber/in",
+    "Ratsschreiber/in",
+    "Bundessekretär/in",
+    "Stadtschreiber/in",
+    "Finanzsekretär/in",
+    "Kultursekretär/in",
+    "Polizeikanzlist/in",
+    "Konsularbeamter / Konsularbeamtin"
+   ],
+   "fr": [
+    "Chancelier / Chancelière",
+    "Fonctionnaire de chancellerie",
+    "Clerc / Clergesse",
+    "Régisseur d'œuvres d'art / Régisseuse d'œuvres d'art"
+   ],
+   "it": [
+    "Cancelliere (impiegato di cancelleria) / Cancelliera (impiegata di cancelleria)",
+    "Impiegato di cancelleria / Impiegata di cancelleria",
+    "Funzionario di cancelleria / Funzionaria di cancelleria",
+    "Segretario di studio / Segretaria di studio"
+   ],
+   "en": [
+    "Coordinator",
+    "Assistant manager",
+    "Municipal secretary",
+    "Director's secretary",
+    "Executive secretary",
+    "Management assistant",
+    "Executive assistant",
+    "Consular officer",
+    "Public administration specialist"
+   ],
+   "en_esco": [
+    "executive assistant",
+    "foreign language assistant",
+    "foreign language correspondent executive assistant",
+    "executive secretary",
+    "personal executive assistant",
+    "senior administrative secretary",
+    "assistant manager",
+    "executive administrative assistant",
+    "personal assistant",
+    "multilingual secretary"
+   ],
+   "web": [
+    {
+     "titel": "Executive Assistant",
+     "sprache": "de/en",
+     "haeufigkeit": 10,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 10 von 32 gesichteten Titeln"
+    },
+    {
+     "titel": "Direktionsassistent/in",
+     "sprache": "de/en",
+     "haeufigkeit": 6,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 6 von 32 gesichteten Titeln"
+    },
+    {
+     "titel": "Assistenz der Geschäftsleitung / GL-Assistenz",
+     "sprache": "de/en",
+     "haeufigkeit": 8,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 8 von 32 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP)",
+   "anzahl_titel": 99,
+   "nachbarn": [
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: manage personnel agenda; observe confidentiality"
+    },
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: manage office facility systems"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: company policies"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 33430: 99 aktive Titel",
+    "ESCO «executive assistant» http://data.europa.eu/esco/occupation/2a04a1df-a3b9-403e-a245-e7f93fdddd44 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-33440",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Medizinisches Sekretariat",
+   "isco08": "3344",
+   "isco08_en": "Medical secretaries",
+   "ch_isco19": "33440",
+   "de": [
+    "Arztsekretär/in",
+    "Spitalsekretär/in",
+    "Chefarztsekretär/in",
+    "Stationssekretär/in",
+    "Medizinischer Sekretär / Medizinische Sekretärin",
+    "Spitalverwaltungsangestellter / Spitalverwaltungsangestellte"
+   ],
+   "fr": [
+    "Secrétaire de médecin",
+    "Secrétaire d'hôpital",
+    "Secrétaire d'un médecin chef",
+    "Secrétaire de service hospitalier"
+   ],
+   "it": [
+    "Segretario di studio medico / Segretaria di studio medico",
+    "Segretario d'ospedale / Segretaria d'ospedale",
+    "Segretario del medico primario / Segretaria del medico primario",
+    "Segretario di stazione sanitaria / Segretaria di stazione sanitaria"
+   ],
+   "en": [
+    "Physician's secretary",
+    "Hospital secretary",
+    "Chief physician secretary",
+    "Medical secretary"
+   ],
+   "en_esco": [
+    "medical transcriptionist",
+    "medical transcriptionist and proof reader",
+    "medical transcription suite typist",
+    "clinical transcriber",
+    "clinical transcription typist",
+    "clinical transcription suite typist",
+    "medical secretary-audio typist",
+    "clinical transcriptionist",
+    "medical transcriber"
+   ],
+   "web": [
+    {
+     "titel": "MPA / Arztsekretär/in",
+     "sprache": "de/en",
+     "haeufigkeit": 16,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 16 von 34 gesichteten Titeln"
+    },
+    {
+     "titel": "Medizinische/r Sekretär/in",
+     "sprache": "de/en",
+     "haeufigkeit": 8,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 8 von 34 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 7,
+   "nachbarn": [
+    {
+     "id": "bu-44130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules; grammar"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules"
+    },
+    {
+     "id": "bu-41320",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: database"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "gesundheit",
+     "grund": "Ausschreibungen «MPA / Arztsekretär/in» in Spitälern und Praxen"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 33440: 7 aktive Titel",
+    "ESCO «medical transcriptionist» http://data.europa.eu/esco/occupation/5d5fde2c-47ce-4dcd-99f0-ba651b7b908f (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-41100",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Allgemeine Büro- und Sachbearbeitung (inkl. Kaufmann/-frau EFZ)",
+   "isco08": "4110",
+   "isco08_en": "General office clerks",
+   "ch_isco19": "41100",
+   "de": [
+    "Bürolist/in",
+    "Kaufmann / Kauffrau",
+    "Bürogehilfe / Bürogehilfin",
+    "Bürokaufmann / Bürokauffrau",
+    "Büroaushilfe",
+    "Büroassistent/in",
+    "Bürotechniker/in",
+    "Adressmanager/in",
+    "Textilkaufmann / Textilkauffrau",
+    "Sachbearbeiter/in",
+    "Fachmitarbeiter/in",
+    "Büroangestellter / Büroangestellte",
+    "Kommerzassistent/in",
+    "Textilbetriebswirt/in"
+   ],
+   "fr": [
+    "Employé de bureau / Employée de bureau",
+    "Employé de commerce / Employée de commerce",
+    "Aide de bureau",
+    "Commerçant de bureau / Commerçante de bureau"
+   ],
+   "it": [
+    "Impiegato d'ufficio / Impiegata d'ufficio",
+    "Impiegato di commercio / Impiegata di commercio",
+    "Aiuto d'ufficio",
+    "Commerciante d'ufficio"
+   ],
+   "en": [
+    "Commercial employee",
+    "Clerical assistant",
+    "Clerk",
+    "Office assistant",
+    "Textile trader",
+    "Office employee",
+    "Administrative officer",
+    "Back office employee",
+    "Administrative employee",
+    "Commercial assistant"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Kauffrau / Kaufmann",
+     "sprache": "de/en",
+     "haeufigkeit": 17,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 17 von 89 gesichteten Titeln"
+    },
+    {
+     "titel": "Sachbearbeiter/in Kundenservice",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 89 gesichteten Titeln"
+    },
+    {
+     "titel": "Administrator (Office, Finance, Project)",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 89 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EBA, EFZ, höhere Fachprüfung (HFP)",
+   "anzahl_titel": 235,
+   "nachbarn": [
+    {
+     "id": "bu-41200",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    },
+    {
+     "id": "bu-41320",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 41100: 235 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-41200",
+   "cluster": "buero",
+   "unterfeld": "Sekretariat & Assistenz",
+   "gruppe": "Sekretariat, allgemein",
+   "isco08": "4120",
+   "isco08_en": "Secretaries (general)",
+   "ch_isco19": "41200",
+   "de": [
+    "Sekretär/in",
+    "Schreiber/in",
+    "PR-Sekretär/in",
+    "Bausekretär/in",
+    "Banksekretär/in",
+    "Werksekretär/in",
+    "Bauschreiber/in",
+    "Zugssekretär/in",
+    "Korrespondent/in",
+    "Werbesekretär/in",
+    "Schulsekretär/in",
+    "Forstsekretär/in",
+    "Alleinsekretär/in",
+    "Privatsekretär/in"
+   ],
+   "fr": [
+    "Secrétaire",
+    "Secrétaire en relations publiques",
+    "Secrétaire au service des constructions",
+    "Secrétaire de banque"
+   ],
+   "it": [
+    "Segretario / Segretaria",
+    "Segretario delle relazioni pubbliche / Segretaria delle relazioni pubbliche",
+    "Segretario nell'edilizia / Segretaria nell'edilizia",
+    "Segretario di banca / Segretaria di banca"
+   ],
+   "en": [
+    "Secretary",
+    "Bank secretary",
+    "School secretary",
+    "Recording clerk",
+    "Parish secretary",
+    "Marketing secretary",
+    "Secretary-telephonist",
+    "Railway clerk",
+    "Multilingual secretary",
+    "Foreign language secretary"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Sekretär/in",
+     "sprache": "de/en",
+     "haeufigkeit": 9,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 9 von 44 gesichteten Titeln"
+    },
+    {
+     "titel": "Mitarbeiter/in Sekretariat",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 44 gesichteten Titeln"
+    },
+    {
+     "titel": "Sachbearbeiter/in Sekretariat",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 44 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP)",
+   "anzahl_titel": 66,
+   "nachbarn": [
+    {
+     "id": "bu-41100",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    },
+    {
+     "id": "bu-41320",
+     "grund": "gleiche ISCO-08-Berufsgruppe 41"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 41200: 66 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-41310",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Schreibdienst und Textverarbeitung",
+   "isco08": "4131",
+   "isco08_en": "Typists and word processing operators",
+   "ch_isco19": "41310",
+   "de": [
+    "Taster/in",
+    "Telexist/in",
+    "Stenograf/in",
+    "Stenograph/in",
+    "Teletypist/in",
+    "Phonotypist/in",
+    "Stenotypist/in",
+    "Dactylograph/in",
+    "Stenodactylo",
+    "Texterfasser/in",
+    "Steno-Dactylo",
+    "Dactylosekretär/in",
+    "Textverarbeiter/in",
+    "Maschinenschreiber/in"
+   ],
+   "fr": [
+    "Claviste",
+    "Télexiste",
+    "Sténographe",
+    "Télétypiste"
+   ],
+   "it": [
+    "Tastierista (tipografia)",
+    "Telexista",
+    "Stenografo / Stenografa",
+    "Teletipista"
+   ],
+   "en": [
+    "Stenographer"
+   ],
+   "en_esco": [
+    "typist",
+    "phonotypist",
+    "data entry typist",
+    "transcription typist",
+    "braille typist",
+    "shorthand typist",
+    "audio typist",
+    "word processor",
+    "clerk typist"
+   ],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 17,
+   "nachbarn": [
+    {
+     "id": "bu-44130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules; use dictionaries"
+    },
+    {
+     "id": "bu-33430",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: company policies"
+    },
+    {
+     "id": "bu-33440",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 41310: 17 aktive Titel",
+    "ESCO «typist» http://data.europa.eu/esco/occupation/22f86890-f68b-402f-a711-3e6df4913271 (Abruf 2026-11-16)"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-41320",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Datenerfassung",
+   "isco08": "4132",
+   "isco08_en": "Data entry clerks",
+   "ch_isco19": "41320",
+   "de": [
+    "Erfasser/in",
+    "Datatypist/in",
+    "EDV-Anwender/in",
+    "Terminalbediener/in",
+    "EDV-Eingabeprüfer/in",
+    "Informatik-Anwender/in",
+    "Qualifizierter EDV-Anwender / Qualifizierte EDV-Anwenderin"
+   ],
+   "fr": [
+    "Préposé aux saisies / Préposée aux saisies",
+    "Opérateur de saisie / Opératrice de saisie",
+    "Utilisateur d'informatique / Utilisatrice d'informatique",
+    "Utilisateur qualifié en informatique de gestion / Utilisatrice qualifiée en informatique de gestion"
+   ],
+   "it": [
+    "Datatipista",
+    "Utente in informatica di gestione",
+    "Utente qualificato in informatica di gestione / Utente qualificata in informatica di gestione",
+    "Operatore di terminale / Operatrice di terminale"
+   ],
+   "en": [],
+   "en_esco": [
+    "data entry clerk",
+    "payment entry clerk",
+    "data-entry clerk",
+    "data steward",
+    "data entry inspector",
+    "data-entry officer",
+    "data entry operator",
+    "data entry clerks",
+    "data entry officer",
+    "statistical clerk"
+   ],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 8,
+   "nachbarn": [
+    {
+     "id": "bu-33430",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply information security policies"
+    },
+    {
+     "id": "bu-33440",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: database"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gleiche ISCO-08-Untergruppe 413"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 41320: 8 aktive Titel",
+    "ESCO «data entry clerk» http://data.europa.eu/esco/occupation/6353b3e8-e8f2-4ecb-b230-186927139892 (Abruf 2026-11-16)"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42110",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Schalterdienst Bank und Post",
+   "isco08": "4211",
+   "isco08_en": "Bank tellers and related clerks",
+   "ch_isco19": "42110",
+   "de": [
+    "Schalterbeamter / Schalterbeamtin",
+    "Schalterassistent/in"
+   ],
+   "fr": [
+    "Employé de guichet / Employée de guichet",
+    "Assistant de guichet / Assistante de guichet"
+   ],
+   "it": [
+    "Impiegato di sportello / Impiegata di sportello",
+    "Assistente allo sportello"
+   ],
+   "en": [],
+   "en_esco": [
+    "bank teller",
+    "bank cashier",
+    "teller coordinator",
+    "bank counter clerk",
+    "bank vault attendant",
+    "bank office clerk",
+    "bank clerk",
+    "teller"
+   ],
+   "web": [
+    {
+     "titel": "Front Office Agent",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 18 gesichteten Titeln"
+    },
+    {
+     "titel": "Front Office (Empfang, Schalter)",
+     "sprache": "de/en",
+     "haeufigkeit": 10,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 10 von 18 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 2,
+   "nachbarn": [
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: banking activities; communicate with customers; convert currency"
+    },
+    {
+     "id": "bu-43120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions; maintain records of financial transactions; offer financial services"
+    },
+    {
+     "id": "bu-42111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers; customer service; handle financial transactions"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "finanzen",
+     "grund": "Titel wie Bankkassier und Bankbeamter im BFS-Zuweisungsschlüssel (Code 42112)"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42110: 2 aktive Titel",
+    "ESCO «bank teller» http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42111",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Schalterdienst Post (Postangestellte)",
+   "isco08": "4211",
+   "isco08_en": "Bank tellers and related clerks",
+   "ch_isco19": "42111",
+   "de": [
+    "Posthalter/in",
+    "Postcommis / Postcommise",
+    "PTT-Beamter / PTT-Beamtin",
+    "Beamter PTT / Beamtin PTT",
+    "Postadjunkt/in",
+    "Postbeamter / Postbeamtin",
+    "Postgehilfe / Postgehilfin",
+    "Ableger PTT / Ablegerin PTT",
+    "Postkaufmann / Postkauffrau",
+    "Postsekretär/in",
+    "Postverwalter/in",
+    "PTT-Inspektor/in",
+    "Postassistent/in",
+    "Checkamtgehilfe / Checkamtgehilfin"
+   ],
+   "fr": [
+    "Buraliste postal / Buraliste postale",
+    "Commis postal / Commis postale",
+    "Fonctionnaire PTT",
+    "Adjoint à la direction des postes / Adjointe à la direction des postes"
+   ],
+   "it": [
+    "Buralista postale",
+    "Commesso postale / Commessa postale",
+    "Funzionario PTT / Funzionaria PTT",
+    "Aggiunto di direzione alle poste / Aggiunta di direzione alle poste"
+   ],
+   "en": [
+    "Post-office keeper",
+    "Post office clerk",
+    "Postal secretary",
+    "Postal official",
+    "Postal cheque assistant",
+    "Post office worker",
+    "Post office assistant"
+   ],
+   "en_esco": [
+    "post office counter clerk",
+    "counter clerk, post office",
+    "mail service clerk",
+    "mail services counter clerk",
+    "post office customer service assistant",
+    "post office supervisor",
+    "post office customer service consultant"
+   ],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 53,
+   "nachbarn": [
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers; customer service; handle financial transactions"
+    },
+    {
+     "id": "bu-42120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    },
+    {
+     "id": "bu-42240",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42111: 53 aktive Titel",
+    "ESCO «post office counter clerk» http://data.europa.eu/esco/occupation/6a6e174e-cffa-49a9-9f2f-aa39c81cdee5 (Abruf 2026-11-16)"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42112",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Schalterdienst Bank (Kassier)",
+   "isco08": "4211",
+   "isco08_en": "Bank tellers and related clerks",
+   "ch_isco19": "42112",
+   "de": [
+    "Sensal/in",
+    "Bankagent/in",
+    "Bankdiener/in",
+    "Bankkassier/in",
+    "Bankbeamter / Bankbeamtin",
+    "Bankkaufmann / Bankkauffrau",
+    "Geldwechsler/in",
+    "Bankfachmann / Bankfachfrau",
+    "Bankassistent/in",
+    "Wechselsensal/in",
+    "Wechselkassier/in",
+    "Wechselgehilfe / Wechselgehilfin",
+    "Leasing-Berater/in",
+    "Finanzassistent/in"
+   ],
+   "fr": [
+    "Agent de change / Agente de change",
+    "Agent de banque / Agente de banque",
+    "Garçon de banque / Fille de banque",
+    "Caissier de banque / Caissière de banque"
+   ],
+   "it": [
+    "Agente di cambio",
+    "Agente bancario / Agente bancaria",
+    "Fattorino di banca / Fattorina di banca",
+    "Cassiere di banca / Cassiera di banca"
+   ],
+   "en": [
+    "Teller (cashier)",
+    "Bank clerk",
+    "Banking expert",
+    "Bank assistant",
+    "Bank employee",
+    "Bank official in charge"
+   ],
+   "en_esco": [
+    "bank teller",
+    "bank cashier",
+    "teller coordinator",
+    "bank counter clerk",
+    "bank vault attendant",
+    "bank office clerk",
+    "bank clerk",
+    "teller"
+   ],
+   "web": [],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP), HF/TS",
+   "anzahl_titel": 36,
+   "nachbarn": [
+    {
+     "id": "bu-43120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions; maintain records of financial transactions; offer financial services"
+    },
+    {
+     "id": "bu-42111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers; customer service; handle financial transactions"
+    },
+    {
+     "id": "bu-42120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42112: 36 aktive Titel",
+    "ESCO «bank teller» http://data.europa.eu/esco/occupation/2ff9e53c-6e7f-42af-8d71-b5dd7f283089 (Abruf 2026-11-16)"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42120",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Spielbank und Wetten (Croupier)",
+   "isco08": "4212",
+   "isco08_en": "Bookmakers, croupiers and related gaming workers",
+   "ch_isco19": "42120",
+   "de": [
+    "Croupier / Croupière",
+    "Buchmacher/in",
+    "Gaming Manager/in",
+    "Slot Attendant",
+    "Casino Shift Manager/in",
+    "Spielkasinoangestellter / Spielkasinoangestellte",
+    "Chefcroupier (Pit Boss) / Chefcroupière (Pit Boss)",
+    "Roulettechef (Tischchef) / Roulettechefin (Tischchefin)",
+    "Croupier BP",
+    "Croupier, eidg. FA / Croupière, eidg. FA"
+   ],
+   "fr": [
+    "Croupier / Croupière",
+    "Bookmaker",
+    "Gaming Manager",
+    "Slot Attendant"
+   ],
+   "it": [
+    "Croupier / Croupière",
+    "Allibratore / Allibratrice",
+    "Gaming Manager",
+    "Slot Attendant"
+   ],
+   "en": [
+    "Croupier",
+    "Bookmaker",
+    "Gaming manager",
+    "Casino shift manager"
+   ],
+   "en_esco": [
+    "gaming dealer",
+    "croupier",
+    "gaming operator",
+    "gaming operations dealer",
+    "dealer",
+    "game operator",
+    "casinio gaming dealer",
+    "game dealer",
+    "table gaming dealer",
+    "casino dealer"
+   ],
+   "web": [
+    {
+     "titel": "Croupier / Croupière",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 9 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP)",
+   "anzahl_titel": 10,
+   "nachbarn": [
+    {
+     "id": "bu-42111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    },
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    },
+    {
+     "id": "bu-42240",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: identify customer's needs"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42120: 10 aktive Titel",
+    "ESCO «gaming dealer» http://data.europa.eu/esco/occupation/fb1a7aab-1e33-4712-b8e0-d335243aba58 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42130",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Pfand- und Kleinkreditgeschäft",
+   "isco08": "4213",
+   "isco08_en": "Pawnbrokers and money-lenders",
+   "ch_isco19": "42130",
+   "de": [
+    "Pfandleiher/in"
+   ],
+   "fr": [
+    "Prêteur sur gages / Prêteuse sur gages"
+   ],
+   "it": [
+    "Pignoratario / Pignorataria"
+   ],
+   "en": [],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 1,
+   "nachbarn": [
+    {
+     "id": "bu-42111",
+     "grund": "gleiche ISCO-08-Untergruppe 421"
+    },
+    {
+     "id": "bu-42112",
+     "grund": "gleiche ISCO-08-Untergruppe 421"
+    },
+    {
+     "id": "bu-42120",
+     "grund": "gleiche ISCO-08-Untergruppe 421"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42130: 1 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42140",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Inkasso",
+   "isco08": "4214",
+   "isco08_en": "Debt-collectors and related workers",
+   "ch_isco19": "42140",
+   "de": [
+    "Inkassant/in",
+    "Inkassoagent/in",
+    "Inkassobeauftragter / Inkassobeauftragte",
+    "Inkassoangestellter / Inkassoangestellte"
+   ],
+   "fr": [
+    "Percepteur / Perceptrice",
+    "Agent d'encaissement / Agente d'encaissement",
+    "Chargé d'encaissement / Chargée d'encaissement",
+    "Employé au service d'encaissement / Employée au service d'encaissement"
+   ],
+   "it": [
+    "Agente addetto agli incassi / Agente addetta agli incassi",
+    "Incaricato degli incassi / Incaricata degli incassi",
+    "Impiegato all'incasso / Impiegata all'incasso"
+   ],
+   "en": [],
+   "en_esco": [
+    "debt collector",
+    "payment collector",
+    "third-party collector",
+    "field debt collector",
+    "collections associate",
+    "debt recovery agent",
+    "assistant debt collector",
+    "debt collection officer",
+    "credit control agent",
+    "debt collection agent"
+   ],
+   "web": [
+    {
+     "titel": "Sachbearbeiter/in Inkasso",
+     "sprache": "de/en",
+     "haeufigkeit": 14,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 14 von 29 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 4,
+   "nachbarn": [
+    {
+     "id": "bu-42111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    },
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    },
+    {
+     "id": "bu-42120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate with customers"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42140: 4 aktive Titel",
+    "ESCO «debt collector» http://data.europa.eu/esco/occupation/50a66df6-c141-4b4a-937a-d3bc55737ae3 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42210",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Reiseberatung und Reisebüro",
+   "isco08": "4221",
+   "isco08_en": "Travel consultants and clerks",
+   "ch_isco19": "42210",
+   "de": [
+    "Reiseberater/in",
+    "Travel Agent",
+    "Reisefachmann / Reisefachfrau",
+    "Ferienberater/in",
+    "Reisedisponent/in",
+    "Reiseverkäufer/in",
+    "Gäste-Betreuer/in",
+    "Reiseorganisator/in",
+    "Tourismusexperte / Tourismusexpertin",
+    "Reisebürokaufmann / Reisebürokauffrau",
+    "Touristikkaufmann / Touristikkauffrau",
+    "Travel Consultant",
+    "Reisebürofachmann / Reisebürofachfrau",
+    "Tourismusfachmann / Tourismusfachfrau"
+   ],
+   "fr": [
+    "Conseiller en voyages / Conseillère en voyages",
+    "Travel Agent",
+    "Agent de voyages / Agente de voyages",
+    "Conseiller en vacances / Conseillère en vacances"
+   ],
+   "it": [
+    "Consulente di viaggi",
+    "Travel Agent",
+    "Agente di viaggio",
+    "Specialista d'agenzia di viaggi"
+   ],
+   "en": [
+    "Travel consultant",
+    "Travel expert",
+    "Holiday advisor",
+    "Tour operator",
+    "Tourism expert",
+    "Travel agent",
+    "Tourism assistant",
+    "Tourist office secretary",
+    "Travel agency clerk",
+    "Guest relations manager"
+   ],
+   "en_esco": [
+    "travel agent",
+    "reservations agent",
+    "sales agent",
+    "travel booking agent",
+    "travel sales agent"
+   ],
+   "web": [
+    {
+     "titel": "Reisespezialist/in / Reiseberater/in",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 25 gesichteten Titeln"
+    },
+    {
+     "titel": "Corporate Travel Agent",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 25 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP), höhere Fachprüfung (HFP), HF/TS",
+   "anzahl_titel": 53,
+   "nachbarn": [
+    {
+     "id": "bu-42240",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: maintain customer records; maintain customer service"
+    },
+    {
+     "id": "bu-42220",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42230",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "gastro",
+     "grund": "Ausschreibungen Reisebüro und Tourismus (Corporate Travel, Sachbearbeiter Tourismus)"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42210: 53 aktive Titel",
+    "ESCO «travel agent» http://data.europa.eu/esco/occupation/79f8f68c-5509-4119-9373-8bef1c364d31 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42220",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Contact Center und Telefonberatung",
+   "isco08": "4222",
+   "isco08_en": "Contact centre information clerks",
+   "ch_isco19": "42220",
+   "de": [
+    "Dialoger/in",
+    "Teleberater/in",
+    "Telefonberater/in",
+    "Call Center Agent/in",
+    "Telefonkundenberater/in",
+    "Fachmann Kundendialog / Fachfrau Kundendialog",
+    "Assistance-Koordinator/in",
+    "Fachmann Kundendialog EFZ / Fachfrau Kundendialog EFZ"
+   ],
+   "fr": [
+    "Dialogueur / Dialogueuse",
+    "Téléconseiller / Téléconseillère",
+    "Conseiller téléphonique / Conseillère téléphonique",
+    "Call Center Agent"
+   ],
+   "it": [
+    "Operatore per la comunicazione con la clientela / Operatrice per la comunicazione con la clientela",
+    "Teleconsulente",
+    "Consulente telefonico / Consulente telefonica",
+    "Call Center Agent"
+   ],
+   "en": [
+    "Call center agent",
+    "Customer relationship manager"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Customer Service Specialist / Representative",
+     "sprache": "de/en",
+     "haeufigkeit": 8,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 8 von 77 gesichteten Titeln"
+    },
+    {
+     "titel": "Call Agent / Telefonmarketing",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 77 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ",
+   "anzahl_titel": 9,
+   "nachbarn": [
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42230",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42240",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42220: 9 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42230",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Telefonzentrale",
+   "isco08": "4223",
+   "isco08_en": "Telephone switchboard operators",
+   "ch_isco19": "42230",
+   "de": [
+    "Telefonist/in",
+    "Telegrafist/in",
+    "Teleoperateur / Teleoperatrice",
+    "Telefongehilfe / Telefongehilfin",
+    "Telefonbeamter / Telefonbeamtin",
+    "Haustelefonist/in",
+    "Telefonist PTT / Telefonistin PTT",
+    "Teleoperateur PTT / Teleoperatrice PTT",
+    "Assistent-Teleoperateur / Assistentin-Teleoperatrice",
+    "Teleoperateurassistent PTT / Teleoperateurassistentin PTT"
+   ],
+   "fr": [
+    "Téléphoniste",
+    "Télégraphiste",
+    "Téléopérateur / Téléopératrice",
+    "Aide-téléphoniste"
+   ],
+   "it": [
+    "Telefonista",
+    "Centralinista",
+    "Telegrafista",
+    "Teleoperatore / Teleoperatrice"
+   ],
+   "en": [
+    "Telephonist",
+    "Switchboard operator",
+    "Teleoperator"
+   ],
+   "en_esco": [
+    "telephone switchboard operator",
+    "telephone answering service operator",
+    "receptionist",
+    "switchboard operator",
+    "alarm centre dispatcher",
+    "communication centre operator",
+    "telephone operator",
+    "receptionist telephone operator",
+    "switchboard receptionist"
+   ],
+   "web": [
+    {
+     "titel": "Telefonist/in",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 24 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 11,
+   "nachbarn": [
+    {
+     "id": "bu-42260",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: answer incoming calls; communicate by telephone; electronic communication"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate by telephone"
+    },
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42230: 11 aktive Titel",
+    "ESCO «telephone switchboard operator» http://data.europa.eu/esco/occupation/0bf68df5-e808-4c27-abf2-6f85440f2d7f (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42240",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Hotelempfang",
+   "isco08": "4224",
+   "isco08_en": "Hotel receptionists",
+   "ch_isco19": "42240",
+   "de": [
+    "Hotelkaufmann / Hotelkauffrau",
+    "Hotelsekretär/in",
+    "Night auditor",
+    "Logentournant / Logentournante",
+    "Hotelconcierge",
+    "Hotelreceptionist/in",
+    "Concierge d'hôtel",
+    "Chef de Réception / Cheffe de Réception",
+    "Receptionist (Hotel) / Empfangsdame (Hotel)",
+    "Gästeempfangsfachmann / Gästeempfangsfachfrau",
+    "Chef de réception (Hotel)",
+    "Hotel- und Gastrofachmann / Hotel- und Gastrofachfrau",
+    "Hotel-Kommunikationsfachmann / Hotel-Kommunikationsfachfrau",
+    "Hotelempfangs- und -administrationsleiter/in"
+   ],
+   "fr": [
+    "Commerçant d'hôtellerie / Commerçante d'hôtellerie",
+    "Secrétaire d'hôtel",
+    "Night auditor",
+    "Tournant de réception (loge) / Tournante de réception (loge)"
+   ],
+   "it": [
+    "Commerciante di prodotti per alberghi",
+    "Segretario d'albergo / Segretaria d'albergo",
+    "Guardiano notturno / Guardiana notturna",
+    "Tournant alla ricezione (camerino) / Tournante alla ricezione (camerino)"
+   ],
+   "en": [
+    "Hotel clerk",
+    "Night auditor",
+    "Concierge (hotel)",
+    "Hotel receptionist",
+    "Hotel concierge",
+    "Receptionist (hotel)",
+    "Reception manager (hotel)",
+    "Hotel communication specialist"
+   ],
+   "en_esco": [
+    "hospitality establishment receptionist",
+    "hotel receptionist",
+    "reception worker",
+    "reception assistant",
+    "reception area clerk",
+    "reservations clerk"
+   ],
+   "web": [
+    {
+     "titel": "Front Office Agent",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 49 gesichteten Titeln"
+    },
+    {
+     "titel": "Rezeptionist/in",
+     "sprache": "de/en",
+     "haeufigkeit": 9,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 9 von 49 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ, Berufsprüfung (BP)",
+   "anzahl_titel": 18,
+   "nachbarn": [
+    {
+     "id": "bu-42210",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: maintain customer records; maintain customer service"
+    },
+    {
+     "id": "bu-42111",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions"
+    },
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "gastro",
+     "grund": "Hotelempfang: Titel wie Night Butler und Portier in den Ausschreibungen"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42240: 18 aktive Titel",
+    "ESCO «hospitality establishment receptionist» http://data.europa.eu/esco/occupation/82025c02-9082-416c-998b-f51eb0359ee6 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42250",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Auskunft und Beschwerdemanagement",
+   "isco08": "4225",
+   "isco08_en": "Inquiry clerks",
+   "ch_isco19": "42250",
+   "de": [
+    "Complaint Manager/in",
+    "Auskunftsbeamter (SBB) / Auskunftsbeamtin (SBB)"
+   ],
+   "fr": [
+    "Complaint Manager",
+    "Employé aux renseignements (CFF) / Employée aux renseignements (CFF)"
+   ],
+   "it": [
+    "Complaint Manager",
+    "Impiegato al servizio informazioni (FFS) / Impiegata al servizio informazioni (FFS)"
+   ],
+   "en": [
+    "Complaint manager"
+   ],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 2,
+   "nachbarn": [
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42220",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42230",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42250: 2 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42260",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Empfang und Réception",
+   "isco08": "4226",
+   "isco08_en": "Receptionists (general)",
+   "ch_isco19": "42260",
+   "de": [
+    "Hostess",
+    "Portier / Portière",
+    "Pförtner/in",
+    "Chefportier / Chefportière",
+    "Receptionist/in",
+    "Empfangschef/in",
+    "Receptionist / Receptionsdame",
+    "Clubassistent / Clubhostess",
+    "Receptionschef/in",
+    "Empfangshostess",
+    "Empfangsgehilfe / Empfangsgehilfin",
+    "Chefreceptionist/in",
+    "Empfangssekretär/in",
+    "Receptionssekretär/in"
+   ],
+   "fr": [
+    "Hôtesse",
+    "Portier / Portière",
+    "Hôtesse d'accueil",
+    "Chef portier / Cheffe portière"
+   ],
+   "it": [
+    "Hostess",
+    "Portinaio / Portinaia",
+    "Steward di accoglienza / Hostess di accoglienza",
+    "Capo portiere / Capo portiera"
+   ],
+   "en": [
+    "Hostess",
+    "Porter",
+    "Doorman",
+    "Receptionist",
+    "Head receptionist",
+    "Reception secretary",
+    "Desk clerk",
+    "Doctor's receptionist"
+   ],
+   "en_esco": [
+    "telephone switchboard operator",
+    "telephone answering service operator",
+    "receptionist",
+    "switchboard operator",
+    "alarm centre dispatcher",
+    "communication centre operator",
+    "telephone operator",
+    "receptionist telephone operator",
+    "switchboard receptionist"
+   ],
+   "web": [
+    {
+     "titel": "Receptionist/in / Empfang",
+     "sprache": "de/en",
+     "haeufigkeit": 29,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 29 von 66 gesichteten Titeln"
+    },
+    {
+     "titel": "Nachtportier/in",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 66 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 21,
+   "nachbarn": [
+    {
+     "id": "bu-42230",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: answer incoming calls; communicate by telephone; electronic communication"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: communicate by telephone"
+    },
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42260: 21 aktive Titel",
+    "ESCO «telephone switchboard operator» http://data.europa.eu/esco/occupation/0bf68df5-e808-4c27-abf2-6f85440f2d7f (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42270",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Befragung und Marktforschung (Interviewer)",
+   "isco08": "4227",
+   "isco08_en": "Survey and market research interviewers",
+   "ch_isco19": "42270",
+   "de": [
+    "Befrager/in",
+    "Interviewer/in",
+    "Telefoninterviewer/in"
+   ],
+   "fr": [
+    "Enquêteur / Enquêtrice",
+    "Interviewer",
+    "Enquêteur téléphonique / Enquêtrice téléphonique"
+   ],
+   "it": [
+    "Intervistatore / Intervistatrice",
+    "Intervistatore telefonico"
+   ],
+   "en": [
+    "Investigator (market and opinion research)",
+    "Interviewer"
+   ],
+   "en_esco": [
+    "market research interviewer",
+    "market research interviewers",
+    "marketing recruiter",
+    "public opinion researcher",
+    "mystery shopper",
+    "phone interviewer",
+    "survey interviewer",
+    "research interviewer",
+    "market research representative",
+    "market research analyst"
+   ],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 3,
+   "nachbarn": [
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: use different communication channels"
+    },
+    {
+     "id": "bu-44150",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: information confidentiality"
+    },
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42270: 3 aktive Titel",
+    "ESCO «market research interviewer» http://data.europa.eu/esco/occupation/7843a4c6-a9f6-4095-94b9-45b384d4bd57 (Abruf 2026-11-16)"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-42290",
+   "cluster": "buero",
+   "unterfeld": "Kundendienst & Empfang",
+   "gruppe": "Kundeninformation, übrige",
+   "isco08": "4229",
+   "isco08_en": "Client information workers not elsewhere classified",
+   "ch_isco19": "42290",
+   "de": [
+    "Informationsangestellter / Informationsangestellte",
+    "Supporter (ohne nähere Angaben) / Supporterin (ohne nähere Angaben)"
+   ],
+   "fr": [
+    "Employé d'information / Employée d'information",
+    "Supporter (sans indication particulière)"
+   ],
+   "it": [
+    "Addetto alle informazioni / Addetta alle informazioni",
+    "Supporter (senza altre indicazioni)"
+   ],
+   "en": [],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 2,
+   "nachbarn": [
+    {
+     "id": "bu-42210",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42220",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    },
+    {
+     "id": "bu-42230",
+     "grund": "gleiche ISCO-08-Untergruppe 422"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 42290: 2 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-43110",
+   "cluster": "buero",
+   "unterfeld": "Rechnungswesen & Personal",
+   "gruppe": "Buchhaltung und Rechnungswesen (Sachbearbeitung)",
+   "isco08": "4311",
+   "isco08_en": "Accounting and bookkeeping clerks",
+   "ch_isco19": "43110",
+   "de": [
+    "Fakturist/in",
+    "Abrechner/in",
+    "Kontorist/in",
+    "Kalkulant/in",
+    "Vorkalkulator/in",
+    "Nachkalkulator/in",
+    "Preiskalkulator/in",
+    "Hilfsbuchhalter/in",
+    "Offertkalkulator/in",
+    "Treuhandsekretär/in",
+    "Treuhandkaufmann / Treuhandkauffrau",
+    "Treuhandassistent/in",
+    "Sekretär-Buchhalter / Sekretärin-Buchhalterin",
+    "Buchhalterassistent/in"
+   ],
+   "fr": [
+    "Facturier / Facturière",
+    "Décompteur / Décompteuse",
+    "Calculateur commercial / Calculatrice commerciale",
+    "Calculateur de devis / Calculatrice de devis"
+   ],
+   "it": [
+    "Fatturista",
+    "Addetto ai conteggi / Addetta ai conteggi",
+    "Contorista",
+    "Scritturale"
+   ],
+   "en": [
+    "Billing clerk",
+    "Price calculator",
+    "Offer calculator",
+    "Clerk in charge (fiduciary)",
+    "Fiduciary officer",
+    "Accounting clerk"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Buchhalter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 15,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 15 von 73 gesichteten Titeln"
+    },
+    {
+     "titel": "Sachbearbeiter/in Buchhaltung / Rechnungswesen",
+     "sprache": "de/en",
+     "haeufigkeit": 17,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 17 von 73 gesichteten Titeln"
+    },
+    {
+     "titel": "Accountant",
+     "sprache": "de/en",
+     "haeufigkeit": 10,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 10 von 73 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 32,
+   "nachbarn": [
+    {
+     "id": "bu-43120",
+     "grund": "gleiche ISCO-08-Untergruppe 431"
+    },
+    {
+     "id": "bu-43130",
+     "grund": "gleiche ISCO-08-Untergruppe 431"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "finanzen",
+     "grund": "Ausschreibungen Accountant und Financial Accountant"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 43110: 32 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-43120",
+   "cluster": "buero",
+   "unterfeld": "Rechnungswesen & Personal",
+   "gruppe": "Sachbearbeitung Finanz, Versicherung und Statistik",
+   "isco08": "4312",
+   "isco08_en": "Statistical, finance and insurance clerks",
+   "ch_isco19": "43120",
+   "de": [
+    "Bankkommis / Bankkommise",
+    "Finanzgehilfe / Finanzgehilfin",
+    "Finanzkaufmann / Finanzkauffrau",
+    "Kreditsekretär/in",
+    "Banknotenzähler/in",
+    "Revisorassistent/in",
+    "Finanzmitarbeiter/in",
+    "Revisionsassistent/in",
+    "Finanzkorrespondent/in",
+    "Börsensachbearbeiter/in",
+    "Kreditsachbearbeiter/in",
+    "Finanzsachbearbeiter/in",
+    "Versicherungsbeamter / Versicherungsbeamtin",
+    "Unfallsachbearbeiter/in"
+   ],
+   "fr": [
+    "Commis de banque",
+    "Aide au service des finances",
+    "Commerçant financier / Commerçante financière",
+    "Secrétaire crédits"
+   ],
+   "it": [
+    "Fattorino di banca / Fattorina di banca",
+    "Aiuto servizio finanze",
+    "Commerciante finanziario / Commerciante finanziaria",
+    "Segretario crediti / Segretaria crediti"
+   ],
+   "en": [
+    "Loan officer",
+    "Insurance officer",
+    "Clerk in charge (accident insurance)",
+    "Controller assistant",
+    "Securities official",
+    "Clerk in charge (insurance)"
+   ],
+   "en_esco": [
+    "insurance clerk",
+    "insurance office clerk",
+    "insurance officer",
+    "indemnity administrator",
+    "insurance assistant",
+    "insurance administration clerk",
+    "insurance reconciliation clerk",
+    "insurance accounts clerk",
+    "insurance agent",
+    "insurance management assistant"
+   ],
+   "web": [
+    {
+     "titel": "Sachbearbeiter/in Rechnungswesen",
+     "sprache": "de/en",
+     "haeufigkeit": 7,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 7 von 57 gesichteten Titeln"
+    },
+    {
+     "titel": "Versicherungssachbearbeiter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 57 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 31,
+   "nachbarn": [
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: handle financial transactions; maintain records of financial transactions; offer financial services"
+    },
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties; write work-related reports"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties; perform office routine activities"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 43120: 31 aktive Titel",
+    "ESCO «insurance clerk» http://data.europa.eu/esco/occupation/9a39a143-d93c-4093-ba3b-47fb67ade318 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-43130",
+   "cluster": "buero",
+   "unterfeld": "Rechnungswesen & Personal",
+   "gruppe": "Lohnbuchhaltung",
+   "isco08": "4313",
+   "isco08_en": "Payroll clerks",
+   "ch_isco19": "43130",
+   "de": [
+    "Lohnbeamter / Lohnbeamtin",
+    "Lohnbuchhalter/in",
+    "Salärbuchhalter/in",
+    "Lohnsachbearbeiter/in",
+    "Payroll-Spezialist/in",
+    "Lohnbüroangestellter / Lohnbüroangestellte"
+   ],
+   "fr": [
+    "Fonctionnaire préposé aux salaires / Fonctionnaire préposée aux salaires",
+    "Comptable préposé aux salaires / Comptable préposée aux salaires",
+    "Comptable paie",
+    "Employé spécialisé dans les prestations salariales / Employée spécialisée dans les prestations salariales"
+   ],
+   "it": [
+    "Funzionario preposto ai salari / Funzionaria preposta ai salari",
+    "Contabile addetto ai salari / Contabile addetta ai salari",
+    "Contabile buste paga",
+    "Impiegato specializzato preposto ai salari / Impiegata specializzata preposta ai salari"
+   ],
+   "en": [
+    "Payroll clerk",
+    "Payroll specialist"
+   ],
+   "en_esco": [
+    "payroll clerk",
+    "payroll officer",
+    "payroll technician",
+    "payroll bookeeper",
+    "payroll accounting clerk",
+    "payroll accounts clerk",
+    "payroll administrator",
+    "payroll and benefits clerk",
+    "personnel and payroll technician",
+    "wages clerk"
+   ],
+   "web": [
+    {
+     "titel": "Payroll Specialist",
+     "sprache": "de/en",
+     "haeufigkeit": 23,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 23 von 32 gesichteten Titeln"
+    },
+    {
+     "titel": "Lohnbuchhalter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 32 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 6,
+   "nachbarn": [
+    {
+     "id": "bu-42112",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: trace financial transactions"
+    },
+    {
+     "id": "bu-43110",
+     "grund": "gleiche ISCO-08-Untergruppe 431"
+    },
+    {
+     "id": "bu-43120",
+     "grund": "gleiche ISCO-08-Untergruppe 431"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "finanzen",
+     "grund": "ESCO «payroll clerk»: Rechnungswesen"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 43130: 6 aktive Titel",
+    "ESCO «payroll clerk» http://data.europa.eu/esco/occupation/ade351da-7bda-424e-8682-bbdcab2a25be (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44100",
+   "cluster": "buero",
+   "unterfeld": "Archiv, Bibliothek & Dokumente",
+   "gruppe": "Bürohilfe, übrige (allgemein)",
+   "isco08": "441",
+   "isco08_en": "Other clerical support workers",
+   "ch_isco19": "44100",
+   "de": [
+    "Bürodiener/in",
+    "Adressierer/in",
+    "Verwaltungsbeamter / Verwaltungsbeamtin"
+   ],
+   "fr": [
+    "Adressier / Adressière",
+    "Fonctionnaire d'administration"
+   ],
+   "it": [
+    "Commesso d'ufficio / Commessa d'ufficio",
+    "Addetto alla gestione degli indirizzi / Addetta alla gestione degli indirizzi",
+    "Funzionario d'amministrazione / Funzionaria d'amministrazione",
+    "Funzionario amministrativo / Funzionaria amministrativa"
+   ],
+   "en": [],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 4,
+   "nachbarn": [
+    {
+     "id": "bu-44130",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    },
+    {
+     "id": "bu-44150",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    },
+    {
+     "id": "bu-44160",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44100: 4 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44110",
+   "cluster": "buero",
+   "unterfeld": "Archiv, Bibliothek & Dokumente",
+   "gruppe": "Bibliotheksassistenz",
+   "isco08": "4411",
+   "isco08_en": "Library clerks",
+   "ch_isco19": "44110",
+   "de": [
+    "Bibliotheksdiener/in",
+    "Bibliotheksgehilfe / Bibliotheksgehilfin",
+    "Bibliotheksangestellter / Bibliotheksangestellte"
+   ],
+   "fr": [
+    "Commis de bibliothèque",
+    "Aide de bibliothèque",
+    "Employé de bibliothèque / Employée de bibliothèque"
+   ],
+   "it": [
+    "Commesso di biblioteca / Commessa di biblioteca",
+    "Ausiliario di biblioteca / Ausiliaria di biblioteca",
+    "Impiegato di biblioteca / Impiegata di biblioteca"
+   ],
+   "en": [],
+   "en_esco": [
+    "library assistant",
+    "library services assistant",
+    "assistant librarian",
+    "senior library assistant",
+    "library technician",
+    "library clerk"
+   ],
+   "web": [
+    {
+     "titel": "Records Manager / Agent d’information documentaire",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 8 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 3,
+   "nachbarn": [
+    {
+     "id": "bu-44130",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: copyright legislation"
+    },
+    {
+     "id": "bu-44150",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    },
+    {
+     "id": "bu-44160",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44110: 3 aktive Titel",
+    "ESCO «library assistant» http://data.europa.eu/esco/occupation/37b15470-3b2d-4ae0-816c-c7c06ed15c99 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44130",
+   "cluster": "buero",
+   "unterfeld": "Archiv, Bibliothek & Dokumente",
+   "gruppe": "Kodierung und Korrektorat",
+   "isco08": "4413",
+   "isco08_en": "Coding, proof-reading and related clerks",
+   "ch_isco19": "44130",
+   "de": [
+    "Lektor/in",
+    "Codierer/in",
+    "Korrektor/in",
+    "Schlüssler/in",
+    "Verifikator/in",
+    "Kodifikator/in",
+    "Verlagslektor/in",
+    "Hilfskorrektor/in",
+    "Codierer (Post) / Codiererin (Post)",
+    "Zeitungskorrektor/in",
+    "Buchdruckkorrektor/in",
+    "Wissenschaftlicher Fachlektor / Wissenschaftliche Fachlektorin",
+    "Korrektor BP / Korrektorin BP",
+    "Korrektor, eidg. FA / Korrektorin, eidg. FA"
+   ],
+   "fr": [
+    "Lecteur / Lectrice",
+    "Encodeur / Encodeuse",
+    "Correcteur / Correctrice",
+    "Codificateur / Codificatrice"
+   ],
+   "it": [
+    "Lettore / Lettrice",
+    "Codificatore / Codificatrice",
+    "Correttore / Correttrice",
+    "Verificatore / Verificatrice"
+   ],
+   "en": [
+    "Editor (lector)",
+    "Coder",
+    "Proofreader",
+    "Reader (editor at a publishing house)",
+    "Proofreading assistant",
+    "Newspaper corrector",
+    "Printing corrector (letterpress)",
+    "Letterpress proofreader"
+   ],
+   "en_esco": [
+    "proofreader",
+    "proof reader",
+    "proof reading clerk"
+   ],
+   "web": [
+    {
+     "titel": "Medizinische/r Kodierer/in",
+     "sprache": "de/en",
+     "haeufigkeit": 10,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 10 von 11 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: Berufsprüfung (BP)",
+   "anzahl_titel": 15,
+   "nachbarn": [
+    {
+     "id": "bu-33440",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules; grammar"
+    },
+    {
+     "id": "bu-41310",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: apply grammar and spelling rules; use dictionaries"
+    },
+    {
+     "id": "bu-44150",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44130: 15 aktive Titel",
+    "ESCO «proofreader» http://data.europa.eu/esco/occupation/f8f34041-3640-41a9-852e-c5a7574de780 (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44140",
+   "cluster": "buero",
+   "unterfeld": "Archiv, Bibliothek & Dokumente",
+   "gruppe": "Schreibservice",
+   "isco08": "4414",
+   "isco08_en": "Scribes and related workers",
+   "ch_isco19": "44140",
+   "de": [
+    "Sekretär (öffentlicher Schreibservice) / Sekretärin (öffentlicher Schreibservice)"
+   ],
+   "fr": [
+    "Ecrivain public / Ecrivaine publique"
+   ],
+   "it": [
+    "Scrivano pubblico / Scrivana pubblica"
+   ],
+   "en": [
+    "Professional writer"
+   ],
+   "en_esco": [],
+   "web": [],
+   "niveau": "",
+   "anzahl_titel": 1,
+   "nachbarn": [
+    {
+     "id": "bu-44130",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    },
+    {
+     "id": "bu-44150",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    },
+    {
+     "id": "bu-44160",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44140: 1 aktive Titel"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44150",
+   "cluster": "buero",
+   "unterfeld": "Archiv, Bibliothek & Dokumente",
+   "gruppe": "Archiv, Registratur und Dokumentation",
+   "isco08": "4415",
+   "isco08_en": "Filing and copying clerks",
+   "ch_isco19": "44150",
+   "de": [
+    "Ableger/in",
+    "Indexierer/in",
+    "Registrator/in",
+    "Karteiführer/in",
+    "Adremapräger/in",
+    "Registerführer/in",
+    "Kartothekführer/in",
+    "Archivangestellter / Archivangestellte",
+    "Aktienregisterführer/in",
+    "Dokumentalistgehilfe / Dokumentalistgehilfin",
+    "Dokumentationsmitarbeiter/in",
+    "Angestellter Adressenverwaltung / Angestellte Adressenverwaltung",
+    "Fachmann Information und Dokumentation / Fachfrau Information und Dokumentation",
+    "Informations- und Dokumentationsassistent/in"
+   ],
+   "fr": [
+    "Classificateur de documents / Classificatrice de documents",
+    "Indexateur / Indexatrice",
+    "Enregistreur / Enregistreuse",
+    "Responsable de cartothèque"
+   ],
+   "it": [
+    "Classificatore di documenti / Classificatrice di documenti",
+    "Addetto all'indicizzazione / Addetta all'indicizzazione",
+    "Registratore / Registratrice",
+    "Responsabile di cartoteca"
+   ],
+   "en": [
+    "Information and documentation specialist",
+    "Information and documentation assistant"
+   ],
+   "en_esco": [
+    "file clerk",
+    "record filing clerk",
+    "records clerk",
+    "filing office helper",
+    "filing system clerk",
+    "technical records clerk",
+    "file keeper",
+    "filing clerk",
+    "file and classification clerk",
+    "documentation specialist"
+   ],
+   "web": [
+    {
+     "titel": "Archivar/in",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 27 gesichteten Titeln"
+    },
+    {
+     "titel": "Records Manager",
+     "sprache": "de/en",
+     "haeufigkeit": 1,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 1 von 27 gesichteten Titeln"
+    },
+    {
+     "titel": "Technical Documentation Specialist",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 27 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: EFZ",
+   "anzahl_titel": 15,
+   "nachbarn": [
+    {
+     "id": "bu-43120",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties; use office systems"
+    },
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: perform clerical duties"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44150: 15 aktive Titel",
+    "ESCO «file clerk» http://data.europa.eu/esco/occupation/9ab0f0db-1128-4050-becd-b09db5eabdaa (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44160",
+   "cluster": "buero",
+   "unterfeld": "Rechnungswesen & Personal",
+   "gruppe": "Personalsachbearbeitung und HR-Assistenz",
+   "isco08": "4416",
+   "isco08_en": "Personnel clerks",
+   "ch_isco19": "44160",
+   "de": [
+    "Personalsekretär/in",
+    "Personalassistent/in",
+    "Human Resources Assistant",
+    "Human Resources Secretary",
+    "Sachbearbeiter Personalwesen / Sachbearbeiterin Personalwesen"
+   ],
+   "fr": [
+    "Secrétaire du personnel",
+    "Assistant du personnel / Assistante du personnel",
+    "Human Resources Assistant",
+    "Human Resources Secretary"
+   ],
+   "it": [
+    "Segretario del personale / Segretaria del personale",
+    "Assistente del personale",
+    "Human Resources Assistant",
+    "Human Resources Secretary"
+   ],
+   "en": [
+    "Personnel secretary",
+    "Personnel assistant",
+    "Human resources assistant",
+    "Human resources secretary"
+   ],
+   "en_esco": [
+    "human resources assistant",
+    "human resources executive assistant",
+    "human resources associate",
+    "human resources secretary",
+    "human resources administrative assistant"
+   ],
+   "web": [
+    {
+     "titel": "HR-Assistent/in",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 26 gesichteten Titeln"
+    },
+    {
+     "titel": "HR Administration Specialist",
+     "sprache": "de/en",
+     "haeufigkeit": 5,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 5 von 26 gesichteten Titeln"
+    },
+    {
+     "titel": "HR-Sachbearbeiter/in",
+     "sprache": "de/en",
+     "haeufigkeit": 3,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 3 von 26 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 6,
+   "nachbarn": [
+    {
+     "id": "bu-33410",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: write work-related reports"
+    },
+    {
+     "id": "bu-33420",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: observe confidentiality"
+    },
+    {
+     "id": "bu-33430",
+     "grund": "gemeinsame ESCO-Kernfähigkeiten: observe confidentiality"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44160: 6 aktive Titel",
+    "ESCO «human resources assistant» http://data.europa.eu/esco/occupation/d8ed1703-9c03-4ea0-83cc-b6169bc54ffd (Abruf 2026-11-16)",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44190",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Büro-Sachbearbeitung, übrige (Verlag, Einkauf, Redaktion)",
+   "isco08": "4419",
+   "isco08_en": "Clerical support workers not elsewhere classified",
+   "ch_isco19": "44190",
+   "de": [
+    "Verlagsassistent/in",
+    "Verlegerassistent/in",
+    "Verlagsangestellter / Verlagsangestellte",
+    "Redaktionsassistent/in",
+    "Einkaufsangestellter / Einkaufsangestellte",
+    "Sachbearbeiter Einkauf / Sachbearbeiterin Einkauf",
+    "Einkaufssachbearbeiter/in",
+    "Auktionshausmitarbeiter/in",
+    "Präger in Adressierbüro / Prägerin in Adressierbüro",
+    "Gewerbeschulangestellter / Gewerbeschulangestellte",
+    "Fremdsprachenkorrespondent/in"
+   ],
+   "fr": [
+    "Assistant d'édition / Assistante d'édition",
+    "Assistant éditeur / Assistante éditrice",
+    "Employé d'édition / Employée d'édition",
+    "Assistant de rédaction / Assistante de rédaction"
+   ],
+   "it": [
+    "Assistente editoriale",
+    "Impiegato di casa editrice / Impiegata di casa editrice",
+    "Assistente di redazione",
+    "Impiegato agli acquisti / Impiegata agli acquisti"
+   ],
+   "en": [
+    "Editorial assistant",
+    "Purchasing agent"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Sachbearbeiter/in Einkauf",
+     "sprache": "de/en",
+     "haeufigkeit": 12,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 12 von 19 gesichteten Titeln"
+    },
+    {
+     "titel": "Junior Buyer / Assistent Beschaffung",
+     "sprache": "de/en",
+     "haeufigkeit": 2,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 2 von 19 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 11,
+   "nachbarn": [
+    {
+     "id": "bu-44191",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44192",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44130",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [
+    {
+     "id": "logistik",
+     "grund": "Ausschreibungen Einkauf: Assistant Supply Chain & Procurement"
+    }
+   ],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44190: 11 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44191",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Sachbearbeitung Marketing und Werbung",
+   "isco08": "4419",
+   "isco08_en": "Clerical support workers not elsewhere classified",
+   "ch_isco19": "44191",
+   "de": [
+    "Medienassistent/in",
+    "Werbemitarbeiter/in",
+    "Werbeangestellter / Werbeangestellte",
+    "Werbesachbearbeiter/in",
+    "Marketingangestellter / Marketingangestellte",
+    "Sponsoringangestellter / Sponsoringangestellte",
+    "Marketingsachbearbeiter/in",
+    "Sachbearbeiter Marketing / Sachbearbeiterin Marketing",
+    "Kommunikationsmitarbeiter/in",
+    "Sachbearbeiter Sponsoring / Sachbearbeiterin Sponsoring",
+    "Angestellter Medienbranche / Angestellte Medienbranche",
+    "Sachbearbeiter Marketing und Verkauf / Sachbearbeiterin Marketing und Verkauf"
+   ],
+   "fr": [
+    "Assistant média / Assistante média",
+    "Collaborateur en publicité / Collaboratrice en publicité",
+    "Employé en publicité / Employée en publicité",
+    "Employé spécialisé en publicité / Employée spécialisée en publicité"
+   ],
+   "it": [
+    "Assistente in comunicazioni multimediali",
+    "Collaboratore pubblicitario / Collaboratrice pubblicitaria",
+    "Impiegato pubblicitario / Impiegata pubblicitaria",
+    "Impiegato specializzato in pubblicità / Impiegata specializzata in pubblicità"
+   ],
+   "en": [
+    "Marketing officer"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Marketing Assistant / Assistenz Marketing",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 32 gesichteten Titeln"
+    }
+   ],
+   "niveau": "",
+   "anzahl_titel": 13,
+   "nachbarn": [
+    {
+     "id": "bu-44190",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44192",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44130",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44191: 13 aktive Titel",
+    "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
+   ],
+   "status": "geprüft"
+  },
+  {
+   "id": "bu-44192",
+   "cluster": "buero",
+   "unterfeld": "Bürobetrieb & Sachbearbeitung",
+   "gruppe": "Kundenbetreuung und Verkaufsinnendienst",
+   "isco08": "4419",
+   "isco08_en": "Clerical support workers not elsewhere classified",
+   "ch_isco19": "44192",
+   "de": [
+    "Verkaufsagent/in",
+    "Kundenberater/in",
+    "Kundenbetreuer/in",
+    "Chemiekaufmann / Chemiekauffrau",
+    "Verkaufsberater/in",
+    "Kundenassistent/in",
+    "Abonnentenwerber/in",
+    "Verkaufsdisponent/in",
+    "Verkaufssupporter/in",
+    "Auftragsabwickler/in",
+    "Kundendienstberater/in",
+    "Privatkundenberater/in",
+    "Innendienstverkäufer/in",
+    "Chemiehandelskaufmann / Chemiehandelskauffrau"
+   ],
+   "fr": [
+    "Agent de vente / Agente de vente",
+    "Conseiller à la clientèle / Conseillère à la clientèle",
+    "Assistant de la clientèle / Assistante de la clientèle",
+    "Commerçant en produits chimiques / Commerçante en produits chimiques"
+   ],
+   "it": [
+    "Agente di vendita",
+    "Consulente della clientela",
+    "Assistente alla clientela",
+    "Commerciante di prodotti chimici"
+   ],
+   "en": [
+    "Chemicals trader",
+    "After-sales service adviser",
+    "Sales officer",
+    "Customer service clerk"
+   ],
+   "en_esco": [],
+   "web": [
+    {
+     "titel": "Sachbearbeiter/in Verkaufsinnendienst",
+     "sprache": "de/en",
+     "haeufigkeit": 19,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 19 von 68 gesichteten Titeln"
+    },
+    {
+     "titel": "Kundenberater/in",
+     "sprache": "de/en",
+     "haeufigkeit": 18,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 18 von 68 gesichteten Titeln"
+    },
+    {
+     "titel": "Customer Service Representative",
+     "sprache": "de/en",
+     "haeufigkeit": 4,
+     "quelle": "jobs.ch Stellensuche, Abruf 2026-11-16: 4 von 68 gesichteten Titeln"
+    }
+   ],
+   "niveau": "Titel im Zuweisungsschlüssel nennen: höhere Fachprüfung (HFP)",
+   "anzahl_titel": 22,
+   "nachbarn": [
+    {
+     "id": "bu-44190",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44191",
+     "grund": "gleiche ISCO-08-Berufsgattung 4419"
+    },
+    {
+     "id": "bu-44130",
+     "grund": "gleiche ISCO-08-Untergruppe 441"
+    }
+   ],
+   "nachbar_felder": [],
+   "quereinstieg": "",
+   "quellen": [
+    "BFS Zuweisungsschlüssel CH-ISCO-19 V1.2 (10/2022), Code 44192: 22 aktive Titel",
     "jobs.ch öffentliche Stellensuche, Abruf 2026-11-16"
    ],
    "status": "geprüft"
