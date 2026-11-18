@@ -1,0 +1,58 @@
+# Automatisch erzeugt (gen_fields.py) aus BFS-Zuweisungsschlüssel V1.2 und ESCO-ISCO-Gruppennamen
+CLUSTER = 'gesundheit'
+PREFIX = 'ge'
+APPEND = False
+BESCHREIBUNG = 'Medizin, Pflege, Therapie, Assistenzberufe, Sport und Körperpflege. Basis: CH-ISCO-19, zugeordnet nach ISCO-08-Gruppen; Gruppennamen aus ESCO (de).'
+UNTERFELDER = ['Leitung Gesundheit', 'Medizin, Therapie & Assistenz', 'Sport & Fitness', 'Körperpflege & Wellness']
+W = 'auto'
+NF = {}
+G = {
+'13400': ('Leitung Gesundheit', '134', 'Sammelgruppe 13400 (ohne eigene ISCO-08-Gattung)', 'Sammelgruppe: Praxisleiter (ohne nähere Angaben), Anstaltsvorsteher', ['home director'], ['Heimleiter', 'Anstaltsvater', 'Anstaltsleiter', 'Home director']),
+'13420': ('Leitung Gesundheit', '1342', 'Health services managers', 'Führungskräfte in der Erbringung von Dienstleistungen im Gesundheitswesen [ESCO-Gruppenname]', ['health institutions expert'], ['Pflegewirt', 'Kantonsarzt', 'Chef Klinik', 'Health institutions expert']),
+'22100': ('Medizin, Therapie & Assistenz', '221', 'Sammelgruppe 22100 (ohne eigene ISCO-08-Gattung)', 'Sammelgruppe: Arzt, Arzt mit eigener Praxis', ['physician'], ['Arzt', 'Assistenzarzt', 'Arzt-Gutachter', 'Physician']),
+'22110': ('Medizin, Therapie & Assistenz', '2211', 'Generalist medical practitioners', 'Allgemeinärzte [ESCO-Gruppenname]', ['country doctor'], ['Landarzt', 'Stadtarzt', 'Schularzt', 'Country doctor']),
+'22120': ('Medizin, Therapie & Assistenz', '2212', 'Specialist medical practitioners', 'Fachärzte [ESCO-Gruppenname]', ['spa doctor'], ['Kurarzt', 'Chirurg', 'Urologe', 'Spa doctor']),
+'22211': ('Medizin, Therapie & Assistenz', '2221', 'Nursing professionals', 'Akademische und vergleichbare Krankenpflegefachkräfte [ESCO-Gruppenname]', ['head nurse'], ['Oberpfleger', 'Pflegeleiter', 'Cheftherapeut', 'Head nurse']),
+'22212': ('Medizin, Therapie & Assistenz', '2221', 'Nursing professionals', 'Akademische und vergleichbare Krankenpflegefachkräfte [ESCO-Gruppenname]', ['clinical nurse'], ['Pfleger', 'Klinikpfleger', 'Etagenpfleger', 'Clinical nurse']),
+'22213': ('Medizin, Therapie & Assistenz', '2221', 'Nursing professionals', 'Akademische und vergleichbare Krankenpflegefachkräfte [ESCO-Gruppenname]', ['ophthalmic nurse'], ['Wundexperte', 'Wundmanager', 'Diätpfleger', 'Ophthalmic nurse']),
+'22220': ('Medizin, Therapie & Assistenz', '2222', 'Midwifery professionals', 'Akademische und vergleichbare Geburtshilfefachkräfte [ESCO-Gruppenname]', ['midwife'], ['Hebamme', 'Geburtshelfer', 'Entbindungspfleger', 'Midwife']),
+'22300': ('Medizin, Therapie & Assistenz', '2230', 'Traditional and complementary medicine professionals', 'Akademische und vergleichbare Fachkräfte in der traditionellen und komplementären Medizin [ESCO-Gruppenname]', ['naturopath'], ['Naturarzt', 'Homöopath', 'Naturheiler', 'Naturopath']),
+'22500': ('Medizin, Therapie & Assistenz', '2250', 'Veterinarians', 'Tierärzte [ESCO-Gruppenname]', ['veterinary surgeon'], ['Tierarzt', 'Vieharzt', 'Veterinär', 'Veterinary surgeon']),
+'22610': ('Medizin, Therapie & Assistenz', '2261', 'Dentists', 'Zahnärzte [ESCO-Gruppenname]', ['dentist'], ['Zahnarzt', 'Orthodont', 'Odontologe', 'Dentist']),
+'22620': ('Medizin, Therapie & Assistenz', '2262', 'Pharmacists', 'Apotheker [ESCO-Gruppenname]', ['dispensing chemist'], ['Apotheker', 'Galeniker', 'Pharmazeut', 'Dispensing chemist']),
+'22630': ('Medizin, Therapie & Assistenz', '2263', 'Environmental and occupational health and hygiene professionals', 'Akademische und vergleichbare Fachkräfte in den Bereichen Umwelt- und Arbeitsmedizin sowie Hygiene [ESCO-Gruppenname]', ['ergonomist'], ['Ergonom', 'Milchinspektor', 'Trinkwasserinspektor', 'Ergonomist']),
+'22640': ('Medizin, Therapie & Assistenz', '2264', 'Physiotherapists', 'Physiotherapeuten [ESCO-Gruppenname]', ['hippotherapist'], ['Reitpädagoge', 'Hippotherapeut', 'Physiopraktiker', 'Hippotherapist']),
+'22650': ('Medizin, Therapie & Assistenz', '2265', 'Dieticians and nutritionists', 'Diätologen und Ernährungsberater [ESCO-Gruppenname]', ['dietary adviser'], ['Diätberater', 'Diätassistent', 'Ökotrophologe', 'Dietary adviser']),
+'22660': ('Medizin, Therapie & Assistenz', '2266', 'Audiologists and speech therapists', 'Audiologen und Sprachtherapeuten [ESCO-Gruppenname]', ['speech therapist'], ['Logopäde', 'Audiologe', 'Orthophonist', 'Speech therapist']),
+'22670': ('Medizin, Therapie & Assistenz', '2267', 'Optometrists and ophthalmic opticians', 'Optometristen und Orthoptisten [ESCO-Gruppenname]', ['orthoptist'], ['Orthoptist', 'Optometrist', 'Perimetrist']),
+'22690': ('Medizin, Therapie & Assistenz', '2269', 'Health professionals not elsewhere classified', 'Akademische und verwandte Gesundheitsberufe, anderweitig nicht genannt [ESCO-Gruppenname]', ['therapist'], ['Therapeut', 'Osteopath', 'Reflexologe', 'Therapist']),
+'22691': ('Medizin, Therapie & Assistenz', '2269', 'Health professionals not elsewhere classified', 'Akademische und verwandte Gesundheitsberufe, anderweitig nicht genannt [ESCO-Gruppenname]', ['ergotherapist'], ['Ergotherapeut', 'Master in Ergotherapie', 'Bachelor in Ergotherapie', 'Ergotherapist']),
+'26340': ('Medizin, Therapie & Assistenz', '2634', 'Psychologists', 'Psychologen [ESCO-Gruppenname]', ['sexologist'], ['Sexologe', 'Psychologe', 'Graphologe', 'Sexologist']),
+'32110': ('Medizin, Therapie & Assistenz', '3211', 'Medical imaging and therapeutic equipment technicians', 'Medizintechniker im Bereich bildgebende Verfahren und Therapiegeräte [ESCO-Gruppenname]', ['eeg assistant'], ['Chef MTA', 'EEG-Assistent', 'Röntgengehilfe', 'Eeg assistant']),
+'32120': ('Medizin, Therapie & Assistenz', '3212', 'Medical and pathology laboratory technicians', 'Medizintechniker im Bereich Labor und Pathologie [ESCO-Gruppenname]', ['cytotechnician'], ['Cheflaborant', 'Seziergehilfe', 'Zytotechniker', 'Cytotechnician']),
+'32130': ('Medizin, Therapie & Assistenz', '3213', 'Pharmaceutical technicians and assistants', 'Pharmazeutisch-technische Assistenten [ESCO-Gruppenname]', ['pharmacy technician'], ['Rezeptar', 'Pharmakant', 'Pharmatechniker', 'Pharmacy technician']),
+'32140': ('Medizin, Therapie & Assistenz', '3214', 'Medical and dental prosthetic technicians', 'Medizinische und zahnmedizinische Prothetiktechniker [ESCO-Gruppenname]', ['truss maker'], ['Bandagist', 'Prothetiker', 'Orthopädist', 'Truss maker']),
+'32210': ('Medizin, Therapie & Assistenz', '3221', 'Nursing associate professionals', 'Nicht akademische Krankenpflegefachkräfte [ESCO-Gruppenname]', ['healthcare assistant'], ['Lernpfleger', 'Anästhesiegehilfe', 'Fachmann Gesundheit', 'Healthcare assistant']),
+'32220': ('Medizin, Therapie & Assistenz', '3222', 'Midwifery associate professionals', 'Nicht akademische Geburtshilfefachkräfte [ESCO-Gruppenname]', ['breastfeeding consultant'], ['Stillberater', 'Trageberater', 'Mütterberater', 'Breastfeeding consultant']),
+'32300': ('Medizin, Therapie & Assistenz', '3230', 'Traditional and complementary medicine associate professionals', 'Nicht akademische Fachkräfte in traditioneller und komplementärer Medizin [ESCO-Gruppenname]', ['eutony specialist'], ['Eutonist', 'Schröpfer', 'Herbalist', 'Eutony specialist']),
+'32400': ('Medizin, Therapie & Assistenz', '3240', 'Veterinary technicians and assistants', 'Veterinärmedizinische Fachkräfte und Assistenten [ESCO-Gruppenname]', ['artificial inseminator'], ['Besamer', 'Tiertherapeut', 'Tierarztgehilfe', 'Artificial inseminator']),
+'32510': ('Medizin, Therapie & Assistenz', '3251', 'Dental assistants and therapists', 'Zahnmedizinische Assistenten und Dentalhygieniker [ESCO-Gruppenname]', ['dental hygienist'], ['Zahnhygieniker', 'Dentalhygieniker', 'Dental hygienist']),
+'32511': ('Medizin, Therapie & Assistenz', '3251', 'Dental assistants and therapists', 'Zahnmedizinische Assistenten und Dentalhygieniker [ESCO-Gruppenname]', ['dental assistant'], ['Zahnarztgehilfe', 'Dentalassistent', 'Prophylaxehelfer', 'Dental assistant']),
+'32520': ('Medizin, Therapie & Assistenz', '3252', 'Medical records and health information technicians', 'Fachkräfte im Bereich medizinische Dokumentation und Information [ESCO-Gruppenname]', ['medical coder'], ['Medizinischer Kodierer', 'Medizinischer Dokumentalist', 'Medizinischer Kodierer BP', 'Medical coder']),
+'32530': ('Medizin, Therapie & Assistenz', '3253', 'Community health workers', 'Fachkräfte in der öffentlichen Gesundheitsfürsorge [ESCO-Gruppenname]', ['health counsellor'], ['Gesundheitsberater', 'Gesundheitsförderer', 'Heilerziehungspfleger', 'Health counsellor']),
+'32540': ('Medizin, Therapie & Assistenz', '3254', 'Dispensing opticians', 'Augenoptiker [ESCO-Gruppenname]', ['optician'], ['Optiker', 'Fachoptiker', 'Ladenoptiker', 'Optician']),
+'32550': ('Medizin, Therapie & Assistenz', '3255', 'Physiotherapy technicians and assistants', 'Physiotherapeutische Techniker und Assistenten [ESCO-Gruppenname]', ['masseur'], ['Rolfer', 'Masseur', 'Podologe']),
+'32560': ('Medizin, Therapie & Assistenz', '3256', 'Medical assistants', 'Medizinische Assistenten [ESCO-Gruppenname]', ["doctor's assistant"], ['Arzthelfer', 'Arztgehilfe', 'Praxishilfe', "Doctor's assistant"]),
+'32580': ('Medizin, Therapie & Assistenz', '3258', 'Ambulance workers', 'Rettungsdienstpersonal [ESCO-Gruppenname]', ['first-aider'], ['Retter', 'Samariter', 'Sanitäter', 'First-aider']),
+'32590': ('Medizin, Therapie & Assistenz', '3259', 'Health associate professionals not elsewhere classified', 'Assistenzberufe im Gesundheitswesen, anderweitig nicht genannt [ESCO-Gruppenname]', ['phlebotomist'], ['Phlebotomist', 'AIDS-Berater', 'OP-Disponent']),
+'34210': ('Sport & Fitness', '3421', 'Athletes and sports players', 'Athleten und Berufssportler [ESCO-Gruppenname]', ['boxer'], ['Boxer', 'Gamer', 'Athlet']),
+'34220': ('Sport & Fitness', '3422', 'Sports coaches, instructors and officials', 'Sportlehrer, Sporttrainer und Sportfunktionäre [ESCO-Gruppenname]', ['coach'], ['Coach', 'Trainer', 'Skilehrer']),
+'34230': ('Sport & Fitness', '3423', 'Fitness and recreation instructors and program leaders', 'Trainer und Betreuer im Bereich Fitness und Erholung [ESCO-Gruppenname]', ['mountain guide'], ['Monitor', 'Bergführer', 'Ludothekar', 'Mountain guide']),
+'51410': ('Körperpflege & Wellness', '5141', 'Hairdressers', 'Friseure [ESCO-Gruppenname]', ['hairdresser'], ['Friseur', 'Barbier', 'Coiffeur', 'Hairdresser']),
+'51420': ('Körperpflege & Wellness', '5142', 'Beauticians and related workers', 'Kosmetiker und verwandte Berufe [ESCO-Gruppenname]', ['make-up artist'], ['Visagist', 'Pedicure', 'Manicure', 'Make-up artist']),
+'53210': ('Medizin, Therapie & Assistenz', '5321', 'Health care assistants', 'Pflegehelfer [ESCO-Gruppenname]', ["nurse's aide"], ['Badehelfer', 'Badepfleger', 'Heimgehilfe', "Nurse's aide"]),
+'53220': ('Medizin, Therapie & Assistenz', '5322', 'Home-based personal care workers', 'Haus- und Familienpfleger [ESCO-Gruppenname]', [], ['Hilfserzieher']),
+'53221': ('Medizin, Therapie & Assistenz', '5322', 'Home-based personal care workers', 'Haus- und Familienpfleger [ESCO-Gruppenname]', ['home health nurse'], ['Hauspfleger', 'Familienpfleger', 'Spitexmitarbeiter', 'Home health nurse']),
+'53222': ('Medizin, Therapie & Assistenz', '5322', 'Home-based personal care workers', 'Haus- und Familienpfleger [ESCO-Gruppenname]', ['social care worker'], ['Agoge', 'Betreuer', 'Begleiter', 'Social care worker']),
+'53290': ('Medizin, Therapie & Assistenz', '5329', 'Personal care workers in health services not elsewhere classified', 'Betreuungsberufe im Gesundheitswesen, anderweitig nicht genannt [ESCO-Gruppenname]', [], ['Animatorgehilfe', 'Heimangestellter', 'Anstaltsangestellter']),
+}
