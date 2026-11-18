@@ -3,7 +3,7 @@
   "version": "17-alle",
   "stand": "2026-11-18",
   "nomenklatur": "CH-ISCO-19, Zuweisungsschlüssel V1.2 (Oktober 2022), BFS",
-  "hinweis": "Alle 17 Berufsfelder sind befüllt (549 Berufsarten der CH-ISCO-19 (5-stellig); Zuweisungsschlüssel V1.2, ESCO, jobs.ch, jobup.ch, job-room.ch). Die Felder IT und Büro wurden von Hand geprüft (Status «geprüft»); die übrigen 15 Felder wurden regelbasiert erzeugt und tragen den Status «entwurf»: Zuordnung der ISCO-Gruppen zu Feldern und Unterfeldern ist eine Setzung des Projekts, Internettitel sind automatisch bereinigte Ausschreibungstitel (Stichprobe je Suchbegriff), Verweise zwischen Feldern beruhen nur auf gleicher ISCO-08-Untergruppe.",
+  "hinweis": "Alle 17 Berufsfelder sind befüllt (549 Berufsarten der CH-ISCO-19, 5-stellig; Quellen: Zuweisungsschlüssel V1.2, ESCO). Die Zuordnung der Berufsgruppen zu Feldern und Unterfeldern ist eine Setzung des Projekts; Verweise zwischen Feldern beruhen nur auf gleicher ISCO-08-Untergruppe. Nur IT und Büro wurden von Hand geprüft.",
   "quellen": [
    "BFS, Schweizer Berufsnomenklatur CH-ISCO-19, Zuweisungsschlüssel V1.2: https://dam-api.bfs.admin.ch/hub/api/dam/assets/23530845/master (Abruf 2026-11-16)",
    "ESCO (Europäische Kommission): https://esco.ec.europa.eu, API https://ec.europa.eu/esco/api (Abruf 2026-11-16)",

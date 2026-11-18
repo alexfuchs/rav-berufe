@@ -9,8 +9,7 @@
   function byIdOf(list){ var m = {}; list.forEach(function(x){ m[x.id] = x; }); return m; }
 
   function hay(b){
-    var w = (b.web || []).map(function(x){ return x.titel; });
-    return norm([].concat(b.de || [], b.fr || [], b.it || [], b.en || [], b.en_esco || [], w, [b.gruppe, b.isco08, b.isco08_en, b.ch_isco19, b.unterfeld, b.niveau]).join(' | '));
+    return norm([].concat(b.de || [], b.fr || [], b.it || [], b.en || [], b.en_esco || [], [b.gruppe, b.isco08, b.isco08_en, b.ch_isco19, b.unterfeld, b.niveau]).join(' | '));
   }
   function hl(text, term){
     var t = esc(text);
@@ -27,7 +26,6 @@
     var fi = (b.fr || []).map(function(x){ return hl(x, term) + ' <small>(fr)</small>'; }).concat((b.it || []).map(function(x){ return hl(x, term) + ' <small>(it)</small>'; }));
     var fiHtml = fi.length ? '<details class="srcs"' + (term ? ' open' : '') + '><summary>Französisch, Italienisch (' + fi.length + ')</summary>' + ul(fi) + '</details>' : '';
     var en = (b.en || []).map(function(x){ return hl(x, term); }).concat((b.en_esco || []).map(function(x){ return hl(x, term) + ' <small>(ESCO)</small>'; }));
-    var web = (b.web || []).map(function(x){ return hl(x.titel, term) + (x.quelle ? '<span class="src">' + esc(x.quelle) + '</span>' : ''); });
     var nb = (b.nachbarn || []).map(function(n){
       var t = byId[n.id]; var label = t ? (t.gruppe || (t.de && t.de[0])) : n.id;
       return '<a href="#' + esc(n.id) + '" data-go="' + esc(n.id) + '">' + esc(label) + '</a>' + (n.grund ? ' <small>(' + esc(n.grund) + ')</small>' : '');
@@ -40,11 +38,10 @@
     var code = b.ch_isco19 || b.isco08 || '–';
     return '<details class="job" id="' + esc(b.id) + '"' + (open ? ' open' : '') + '><summary>' +
       '<span class="caret" aria-hidden="true">›</span><span class="code">' + esc(code) + '</span><span class="gn">' + hl(b.gruppe || (b.de && b.de[0]) || b.id, term) + '</span>' +
-      '<span class="pv">' + esc(preview) + '</span><span class="st ' + esc(b.status) + '">' + esc((b.status || '').replace('_', ' ')) + '</span></summary>' +
+      '<span class="pv">' + esc(preview) + '</span></summary>' +
       '<div class="job-body">' +
         '<div class="col"><h4>Amtlich / Deutsch</h4>' + ul(de) + fiHtml + (b.anzahl_titel ? '<span class="src">Auswahl aus ' + b.anzahl_titel + ' amtlichen Titeln</span>' : '') + '</div>' +
         '<div class="col"><h4>English</h4>' + ul(en) + '</div>' +
-        '<div class="col"><h4>Im Internet</h4>' + ul(web) + '</div>' +
         '<div class="job-foot"><div class="col"><h4>Nachbarn</h4>' + (nb.length ? ul(nb) : '<span class="none">–</span>') + (b.quereinstieg ? '<span class="src">Quereinstieg: ' + esc(b.quereinstieg) + '</span>' : '') + '</div>' +
         '<div class="col"><h4>Einordnung</h4><span class="src">CH-ISCO-19: ' + esc(b.ch_isco19 || '–') + '</span><span class="src">ISCO-08: ' + esc(b.isco08 || '–') + (b.isco08_en ? ' (' + esc(b.isco08_en) + ')' : '') + '</span>' + (b.niveau ? '<span class="src">' + esc(b.niveau) + '</span>' : '') + srcs + '</div></div>' +
       '</div></details>';
@@ -125,10 +122,10 @@
   window.addEventListener('afterprint', function(){ wasOpen.forEach(function(p){ p[0].open = p[1]; }); });
 
   function csv(){
-    var rows = [['Berufsfeld','Unterfeld','Gruppe','ISCO-08','CH-ISCO-19','Deutsch','Franzoesisch','Italienisch','English','English (ESCO)','Titel im Internet','Niveau','Status','Quellen']];
+    var rows = [['Berufsfeld','Unterfeld','Gruppe','ISCO-08','CH-ISCO-19','Deutsch','Franzoesisch','Italienisch','English','English (ESCO)','Niveau','Quellen']];
     data.berufe.forEach(function(b){
       var c = data.cluster.filter(function(x){ return x.id === b.cluster; })[0];
-      rows.push([c ? c.de : b.cluster, b.unterfeld, b.gruppe, b.isco08, b.ch_isco19, (b.de||[]).join(' | '), (b.fr||[]).join(' | '), (b.it||[]).join(' | '), (b.en||[]).join(' | '), (b.en_esco||[]).join(' | '), (b.web||[]).map(function(x){ return x.titel; }).join(' | '), b.niveau, b.status, (b.quellen||[]).join(' | ')]);
+      rows.push([c ? c.de : b.cluster, b.unterfeld, b.gruppe, b.isco08, b.ch_isco19, (b.de||[]).join(' | '), (b.fr||[]).join(' | '), (b.it||[]).join(' | '), (b.en||[]).join(' | '), (b.en_esco||[]).join(' | '), b.niveau, (b.quellen||[]).join(' | ')]);
     });
     var t = rows.map(function(r){ return r.map(function(v){ return '"' + String(v == null ? '' : v).replace(/"/g,'""') + '"'; }).join(';'); }).join('\r\n');
     var a = d.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + t], {type:'text/csv;charset=utf-8'})); a.download = 'berufsliste.csv';

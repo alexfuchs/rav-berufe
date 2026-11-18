@@ -21,8 +21,7 @@ for b in d['berufe']:
 filled = [c['id'] for c in d['cluster'] if any(b['cluster'] == c['id'] for b in d['berufe'])]
 d['meta']['version'] = '%d-alle' % len(filled)
 d['meta']['stand'] = ABRUF
-d['meta']['hinweis'] = ('Alle 17 Berufsfelder sind befüllt (%d Berufsarten der CH-ISCO-19 (5-stellig); Zuweisungsschlüssel V1.2, ESCO, jobs.ch, jobup.ch, job-room.ch). '
-    'Die Felder IT und Büro wurden von Hand geprüft (Status «geprüft»); die übrigen 15 Felder wurden regelbasiert erzeugt und tragen den Status «entwurf»: Zuordnung der ISCO-Gruppen zu Feldern und Unterfeldern ist eine Setzung des Projekts, Internettitel sind automatisch bereinigte Ausschreibungstitel (Stichprobe je Suchbegriff), Verweise zwischen Feldern beruhen nur auf gleicher ISCO-08-Untergruppe.' % len(d['berufe']))
+d['meta']['hinweis'] = ('Alle 17 Berufsfelder sind befüllt (%d Berufsarten der CH-ISCO-19, 5-stellig; Quellen: Zuweisungsschlüssel V1.2, ESCO). Die Zuordnung der Berufsgruppen zu Feldern und Unterfeldern ist eine Setzung des Projekts; Verweise zwischen Feldern beruhen nur auf gleicher ISCO-08-Untergruppe. Nur IT und Büro wurden von Hand geprüft.') % len(d['berufe'])
 qs = [x for x in d['meta']['quellen'] if not x.startswith('jobs.ch')]
 d['meta']['quellen'] = qs + ['Stellenportale (öffentliche Suche, Stichprobe je Suchbegriff, Abruf %s): https://www.jobs.ch, https://www.jobup.ch, https://www.job-room.ch (RAV/SECO)' % ABRUF,
     'ISCO-08-Gruppennamen de/en: ESCO-API, https://ec.europa.eu/esco/api (Abruf %s)' % ABRUF]

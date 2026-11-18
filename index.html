@@ -10,7 +10,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2316181c%27/%3E%3Cpath d=%27M8 22V10h8a4 4 0 010 8h-8m6 0l4 4%27 fill=%27none%27 stroke=%27%23fcfcfb%27 stroke-width=%273%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 <link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/rav.css?v=3">
+<link rel="stylesheet" href="assets/rav.css?v=4">
 </head>
 <body>
 <main class="wrap">
@@ -18,15 +18,15 @@
   <p class="sub">Berufe nach Berufsfeldern gruppiert. Pro Berufsgruppe: amtliche Bezeichnungen, englische Bezeichnungen und Titel, wie Arbeitgeber sie ausschreiben, dazu verwandte Berufe. Für Gespräche, in denen Alternativen und Suchgebiete gefragt sind.</p>
   <div class="notice" id="notice" hidden><strong>Stand:</strong> <span id="hint"></span></div>
   <div class="bar">
-      <input id="q" type="search" placeholder="Beruf suchen: Deutsch, English, Internet-Titel oder Code" aria-label="Beruf suchen">
+      <input id="q" type="search" placeholder="Beruf suchen: Deutsch, English oder Code" aria-label="Beruf suchen">
       <button class="btn" type="button" id="toggle">Alles öffnen</button>
       <button class="btn" type="button" id="csv">Als CSV laden</button>
   </div>
   <div class="chips" id="chips" role="group" aria-label="Berufsfeld"></div>
   <p class="info" id="info" role="status" aria-live="polite"></p>
   <div id="out"></div>
-  <p class="foot">Die Liste ist ein Hilfsmittel und ersetzt weder die amtlichen Berufsverzeichnisse noch die Fachberatung. Status «geprüft» heisst: von Hand gegen die Quellen kontrolliert. Status «entwurf» heisst: regelbasiert aus BFS, ESCO und den Stellenportalen erzeugt, noch nicht von Hand kontrolliert. Zum Weiterrecherchieren: <a href="prompt-berufsliste-RAV.md">Prompt als Textdatei</a>.</p>
+  <p class="foot">Die Liste ist ein Hilfsmittel und ersetzt weder die amtlichen Berufsverzeichnisse noch die Fachberatung. Zum Weiterrecherchieren: <a href="prompt-berufsliste-RAV.md">Prompt als Textdatei</a>.</p>
 </main>
-<script src="assets/rav.js"></script>
+<script src="assets/rav.js?v=2"></script>
 </body>
 </html>
